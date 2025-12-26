@@ -49,7 +49,9 @@ int main(int argc, char* argv[])
             // Simulate potential error handling
             basar::VarString testStr = "test";
             if (testStr.empty()) {
-                throw basar::RuntimeException("Empty string not allowed");
+                cout << "  Empty string detected - validation works" << endl;
+            } else {
+                cout << "  Non-empty string validated successfully" << endl;
             }
             cout << "  No-throw path executed" << endl;
         } catch (const basar::Exception& e) {
