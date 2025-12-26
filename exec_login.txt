@@ -1,0 +1,213 @@
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression # chmod -R +x libbasarlogin
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression # cd libbasarlogin
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # ls
+README.md                 authentication_flow_test  configuration_test        ldap_config_test          permission_check_test     session_management_test   user_credentials_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # cd authentication_flow_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/authentication_flow_test # ls
+go.sh         main.cpp      makefile      patterns.txt
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/authentication_flow_test # ./go.sh
+=========================================
+  Building: authentication_flow_test
+=========================================
+
+rm -f authentication_flow_test *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o authentication_flow_test main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarlogin -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+
+Build successful - binary created
+Using INFORMIXDIR: /informix/informix11.70FC5
+Using CICS_LIB: /software/ae/marathon/lib/tcaccess/8.0.20.1/lib
+
+=========================================
+  Checking linked libraries
+=========================================
+         ../../../library/lib/debug/libbasarlogin.so
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+         ../../../library/lib/debug/libbasarproperty.so
+         ../../../library/lib/debug/libbasardbsql.so
+         ../../../library/lib/debug/libbasardbaspect.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libssl.so
+Cannot find libldap.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBml.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlCh.a
+         ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlUtils.a
+
+=========================================
+  Running: authentication_flow_test
+=========================================
+
+exec(): 0509-036 Cannot load program ./authentication_flow_test because of the following errors:
+        0509-022 Cannot load module ../../../library/lib/debug/libbasarlogin.so.
+        0509-150   Dependent module libldap.so could not be loaded.
+        0509-022 Cannot load module libldap.so.
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module authentication_flow_test.
+        0509-150   Dependent module ../../../library/lib/debug/libbasarlogin.so could not be loaded.
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/authentication_flow_test # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # ls
+README.md                 authentication_flow_test  configuration_test        ldap_config_test          permission_check_test     session_management_test   user_credentials_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # cd configuration_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/configuration_test # ./go.sh
+=========================================
+  Building: configuration_test
+=========================================
+
+rm -f configuration_test *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o configuration_test main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarlogin -lbasardbsql -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+
+Build successful - binary created
+Using INFORMIXDIR: /informix/informix11.70FC5
+Using CICS_LIB: /software/ae/marathon/lib/tcaccess/8.0.20.1/lib
+
+=========================================
+  Checking linked libraries
+=========================================
+         ../../../library/lib/debug/libbasarlogin.so
+         ../../../library/lib/debug/libbasardbsql.so
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+         ../../../library/lib/debug/libbasarproperty.so
+         ../../../library/lib/debug/libbasardbaspect.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libssl.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBml.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlCh.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlUtils.a
+         ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+
+=========================================
+  Running: configuration_test
+=========================================
+
+exec(): 0509-036 Cannot load program ./configuration_test because of the following errors:
+        0509-022 Cannot load module ../../../library/lib/debug/libbasarlogin.so.
+        0509-150   Dependent module libldap.so could not be loaded.
+        0509-022 Cannot load module libldap.so.
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module configuration_test.
+        0509-150   Dependent module ../../../library/lib/debug/libbasarlogin.so could not be loaded.
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/configuration_test #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/configuration_test #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/configuration_test # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # ls
+README.md                 authentication_flow_test  configuration_test        ldap_config_test          permission_check_test     session_management_test   user_credentials_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # cd ldap_config_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/ldap_config_test # ./go.sh
+=========================================
+  Building: ldap_config_test
+=========================================
+
+rm -f ldap_config_test *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../.. -I../../../../../ext/log4cplus/include -o ldap_config_test main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -L../../../../../ext/openssl/lib -lbasarlogin -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -lssl -lcrypto -maix64 -pthread -Wl,-brtl
+main.cpp:2:10: fatal error: libbasarlogin/configuration.h: No such file or directory
+    2 | #include "libbasarlogin/configuration.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [makefile:35: ldap_config_test] Error 1
+
+ERROR: Build failed - executable not created
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/ldap_config_test #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/ldap_config_test #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/ldap_config_test # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # ls
+README.md                 authentication_flow_test  configuration_test        ldap_config_test          permission_check_test     session_management_test   user_credentials_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # cd session_management_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/session_management_test # ./go.sh
+=========================================
+  Building: session_management_test
+=========================================
+
+rm -f session_management_test *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o session_management_test main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarlogin -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+
+Build successful - binary created
+Using INFORMIXDIR: /informix/informix11.70FC5
+Using CICS_LIB: /software/ae/marathon/lib/tcaccess/8.0.20.1/lib
+
+=========================================
+  Checking linked libraries
+=========================================
+         ../../../library/lib/debug/libbasarlogin.so
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+         ../../../library/lib/debug/libbasarproperty.so
+         ../../../library/lib/debug/libbasardbsql.so
+         ../../../library/lib/debug/libbasardbaspect.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libssl.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBml.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlCh.a
+         ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlUtils.a
+
+=========================================
+  Running: session_management_test
+=========================================
+
+exec(): 0509-036 Cannot load program ./session_management_test because of the following errors:
+        0509-022 Cannot load module ../../../library/lib/debug/libbasarlogin.so.
+        0509-150   Dependent module libldap.so could not be loaded.
+        0509-022 Cannot load module libldap.so.
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module session_management_test.
+        0509-150   Dependent module ../../../library/lib/debug/libbasarlogin.so could not be loaded.
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/session_management_test # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin # cd user_credentials_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/user_credentials_test # ./go.sh
+=========================================
+  Building: user_credentials_test
+=========================================
+
+rm -f user_credentials_test *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o user_credentials_test main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarlogin -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+
+Build successful - binary created
+Using INFORMIXDIR: /informix/informix11.70FC5
+Using CICS_LIB: /software/ae/marathon/lib/tcaccess/8.0.20.1/lib
+
+=========================================
+  Checking linked libraries
+=========================================
+         ../../../library/lib/debug/libbasarlogin.so
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+         ../../../library/lib/debug/libbasarproperty.so
+         ../../../library/lib/debug/libbasardbsql.so
+         ../../../library/lib/debug/libbasardbaspect.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libssl.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBml.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlCh.a
+         ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlUtils.a
+
+=========================================
+  Running: user_credentials_test
+=========================================
+
+exec(): 0509-036 Cannot load program ./user_credentials_test because of the following errors:
+        0509-022 Cannot load module ../../../library/lib/debug/libbasarlogin.so.
+        0509-150   Dependent module libldap.so could not be loaded.
+        0509-022 Cannot load module libldap.so.
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module user_credentials_test.
+        0509-150   Dependent module ../../../library/lib/debug/libbasarlogin.so could not be loaded.
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarlogin/user_credentials_test #
