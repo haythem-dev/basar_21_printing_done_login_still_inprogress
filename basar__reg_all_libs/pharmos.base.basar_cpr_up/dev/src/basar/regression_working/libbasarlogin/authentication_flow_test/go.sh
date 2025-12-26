@@ -32,8 +32,8 @@ echo "  Building: authentication_flow_test" 2>&1 | tee -a go.out
 echo "=========================================" 2>&1 | tee -a go.out
 echo "" 2>&1 | tee -a go.out
 
-make clean 2>&1 | tee -a go.out
-make       2>&1 | tee -a go.out
+make clean 2>&1 | grep -v "0711-224\|0711-345" | tee -a go.out
+make       2>&1 | grep -v "0711-224\|0711-345" | tee -a go.out
 
 # Check if build succeeded
 if [ ! -f authentication_flow_test ]; then

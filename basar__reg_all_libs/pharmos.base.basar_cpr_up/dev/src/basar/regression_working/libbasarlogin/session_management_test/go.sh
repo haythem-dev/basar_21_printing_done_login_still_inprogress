@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Regression test runner script for configuration_test
+# Regression test runner script for session_management_test
 
 cd "$(dirname "$0")"
 
@@ -15,7 +15,7 @@ export MARATHON_LOG_CONFIGDIR="$LOG_CONFIG_DIR"
 export MARATHON_LOG_LOGSDIR="$LOG_LOGS_DIR"
 
 # Create minimal config file for this test (console output only)
-cat > "$LOG_CONFIG_DIR/configuration_test.cfg" << 'EOF'
+cat > "$LOG_CONFIG_DIR/session_management_test.cfg" << 'EOF'
 log4cplus.rootLogger=INFO, APPEND_STDOUT
 log4cplus.appender.APPEND_STDOUT=log4cplus::ConsoleAppender
 log4cplus.appender.APPEND_STDOUT.layout=log4cplus::PatternLayout
@@ -24,19 +24,19 @@ EOF
 # ============================================================================
 
 # Clean previous build
-rm -f configuration_test go.out
+rm -f session_management_test go.out
 
 # Build the test
 echo "=========================================" 2>&1 | tee go.out
-echo "  Building: configuration_test" 2>&1 | tee -a go.out
+echo "  Building: session_management_test" 2>&1 | tee -a go.out
 echo "=========================================" 2>&1 | tee -a go.out
 echo "" 2>&1 | tee -a go.out
 
-make clean 2>&1 | tee -a go.out
-make       2>&1 | tee -a go.out
+make clean 2>&1 | grep -v "0711-224\|0711-345" | tee -a go.out
+make       2>&1 | grep -v "0711-224\|0711-345" | tee -a go.out
 
 # Check if build succeeded
-if [ ! -f configuration_test ]; then
+if [ ! -f session_management_test ]; then
     echo "" 2>&1 | tee -a go.out
     echo "ERROR: Build failed - executable not created" 2>&1 | tee -a go.out
     exit 1
@@ -76,16 +76,16 @@ echo "" 2>&1 | tee -a go.out
 echo "=========================================" 2>&1 | tee -a go.out
 echo "  Checking linked libraries" 2>&1 | tee -a go.out
 echo "=========================================" 2>&1 | tee -a go.out
-ldd configuration_test 2>&1 | grep -E "libbasar|liblog4cplus|libBml|libssl" | tee -a go.out
+ldd session_management_test 2>&1 | grep -E "libbasar|liblog4cplus|libBml|libssl" | tee -a go.out
 
 # Run the test
 echo "" 2>&1 | tee -a go.out
 echo "=========================================" 2>&1 | tee -a go.out
-echo "  Running: configuration_test" 2>&1 | tee -a go.out
+echo "  Running: session_management_test" 2>&1 | tee -a go.out
 echo "=========================================" 2>&1 | tee -a go.out
 echo "" 2>&1 | tee -a go.out
 
-./configuration_test 2>&1 | tee -a go.out
+./session_management_test 2>&1 | tee -a go.out
 exit_code=$?
 
 # Report exit code
