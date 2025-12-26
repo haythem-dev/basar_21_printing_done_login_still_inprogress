@@ -1,0 +1,7 @@
+\-std=c++17
+\-g -Wall
+\-DQT_CONCURRENT_LIB
+\-DQT_CORE_LIB
+pkg-install/lib/libQt5Concurrent.so
+pkg-install/lib/libQt5Core.so
+Result from stored function: 42

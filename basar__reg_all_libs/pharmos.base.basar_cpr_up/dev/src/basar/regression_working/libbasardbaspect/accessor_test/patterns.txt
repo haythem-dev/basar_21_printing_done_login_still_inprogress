@@ -1,0 +1,15 @@
+Basar Regression Test: accessor_test
+Test 1: Accessor Interface
+Accessor interface verified
+Test 2: Accessor Definition
+Accessor definition list available
+Test 3: Accessor Instance
+Accessor instance management verified
+Test 4: Accessor Execute
+Accessor execute mechanism available
+Test 5: Accessor Listener
+Accessor execute listener validated
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasardbaspect.so

@@ -1,0 +1,8 @@
+main.cpp:2:12:File
+#include <QFile>
+main.cpp:18:5:file
+    files << argv\[i\];
+qrep.pro:3:1:CON
+CONFIG += console c++17
+qrep.pro:4:1:CON
+CONFIG -= app_bundle

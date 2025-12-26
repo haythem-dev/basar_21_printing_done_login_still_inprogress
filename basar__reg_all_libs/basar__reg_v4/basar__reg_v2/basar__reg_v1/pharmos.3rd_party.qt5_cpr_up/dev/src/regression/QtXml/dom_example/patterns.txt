@@ -1,0 +1,9 @@
+pkg-install/lib/libQt5Core.so
+pkg-install/lib/libQt5Xml.so
+std=c++17
+Root element: "library"
+Book ID: "2" Title: "Another Book"
+Modified XML:
+<title>New Book Title<\/title>\\n
+shr_xpg5_64.o
+libpthread.a

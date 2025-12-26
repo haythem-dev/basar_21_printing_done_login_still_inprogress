@@ -1,0 +1,1 @@
+#include "../QtFtp/qurlinfo.h"

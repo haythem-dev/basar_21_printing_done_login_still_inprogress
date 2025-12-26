@@ -1,0 +1,22 @@
+Basar Regression Test: cpp_basics
+Test 1: String Operations
+String value: Hello Basar
+String length:
+String operations verified
+Test 2: Vector Operations
+Vector size: 5
+Vector capacity:
+Vector operations verified
+Test 3: Arithmetic Operations
+Sum of elements: 15
+Arithmetic operations verified
+Test 4: Smart Pointer Operations
+Smart pointer value: 42
+Smart pointer not null: true
+Smart pointer operations verified
+Test 5: Exception Handling Basics
+Exception caught: Test exception
+Exception handling verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0

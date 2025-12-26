@@ -1,0 +1,9 @@
+
+Basar Regression Test: exception_handling
+Test 1: DbException construction
+DbException caught successfully
+Test 2: Exception hierarchy
+Exception caught as base class
+Test completed successfully
+Build successful - binary created
+Test exit code: 0

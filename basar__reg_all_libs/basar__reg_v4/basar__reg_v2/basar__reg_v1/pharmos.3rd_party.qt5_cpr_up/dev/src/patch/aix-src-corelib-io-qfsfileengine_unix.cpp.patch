@@ -1,0 +1,38 @@
+# Fix AIX truncate issue in QFSFileEngine
+--- src/corelib/io/qfsfileengine_unix.cpp.orig
++++ src/corelib/io/qfsfileengine_unix.cpp
+@@ -535,1 +535,14 @@
+-        ret = QT_TRUNCATE(d->fileEntry.nativeFilePath().constData(), size) == 0;
++    {
++#ifdef _AIX
++        // AIX doesn't have truncate(), use ftruncate() with temporary fd
++        int tmpfd = QT_OPEN(d->fileEntry.nativeFilePath().constData(), QT_OPEN_WRONLY);
++        if (tmpfd != -1) {
++            ret = QT_FTRUNCATE(tmpfd, size) == 0;
++            QT_CLOSE(tmpfd);
++        } else {
++            ret = false;
++        }
++#else
++        ret = QT_TRUNCATE(d->fileEntry.nativeFilePath().constData(), size) == 0;
++#endif
++    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

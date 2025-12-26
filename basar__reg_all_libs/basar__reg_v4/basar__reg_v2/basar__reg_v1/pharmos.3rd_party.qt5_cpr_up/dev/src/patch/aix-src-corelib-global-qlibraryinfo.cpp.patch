@@ -1,0 +1,53 @@
+# Fix for AIX missing Dl_info and dladdr in qlibraryinfo.cpp
+--- src/corelib/global/qlibraryinfo.cpp.orig
++++ src/corelib/global/qlibraryinfo.cpp
+@@ -40,0 +41,5 @@
++#ifdef _AIX
++#include <dlfcn.h>
++#include <sys/ldr.h>
++#endif
++
+@@ -530,0 +536,22 @@ static HMODULE getWindowsModuleHandle()
++#ifdef _AIX
++static QString getRelocatablePrefix()
++{
++    // AIX implementation using loadquery instead of dladdr
++    char buffer[1024];
++    int size = loadquery(L_GETINFO, buffer, sizeof(buffer));
++    if (size > 0) {
++        struct ld_info *ldi = (struct ld_info *)buffer;
++        while (ldi) {
++            char *libpath = ldi->ldinfo_filename;
++            if (strstr(libpath, "Qt5Core") || strstr(libpath, "libQt5Core")) {
++                QString qtCoreLibraryPath = QString::fromLocal8Bit(libpath);
++                return prefixFromQtCoreLibraryHelper(qtCoreLibraryPath);
++            }
++            if (ldi->ldinfo_next == 0)
++                break;
++            ldi = (struct ld_info *)((char *)ldi + ldi->ldinfo_next);
++        }
++    }
++    return QString();
++}
++#else //NOT _AIX
+@@ -644,0 +672 @@
++#endif //NOT _AIX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

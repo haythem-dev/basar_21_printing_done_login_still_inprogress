@@ -1,0 +1,4 @@
+pkg-install/lib/libQt5Concurrent.so
+pkg-install/lib/libQt5Core.so
+Numbers:
+Squares:

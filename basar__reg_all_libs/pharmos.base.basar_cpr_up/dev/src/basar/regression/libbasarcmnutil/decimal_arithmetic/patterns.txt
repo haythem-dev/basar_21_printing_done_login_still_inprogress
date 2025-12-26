@@ -1,0 +1,17 @@
+
+Basar Decimal Arithmetic Test
+Test 1: Decimal Creation
+12345,0
+Test 2: Decimal Addition
+19134,0
+Test 3: Decimal Subtraction
+5556,0
+Test 4: Decimal Multiplication
+Test 5: Decimal Comparison
+100.00 < 200.00: true
+200.00 > 100.00: true
+Test 6: Decimal Precision
+All decimal operations completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

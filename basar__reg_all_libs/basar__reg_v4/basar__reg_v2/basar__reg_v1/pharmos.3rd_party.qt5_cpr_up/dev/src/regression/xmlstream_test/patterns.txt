@@ -1,0 +1,23 @@
+pkg-install/lib/libQt5Core.so
+Starting Qt XML Stream Test
+Based on -feature-xmlstream, -feature-xmlstreamreader, -feature-xmlstreamwriter flags
+Test 1: XML Stream Writer
+XML Writer test completed
+Generated XML size:
+Test 2: XML Stream Reader
+XML Reader test started
+Start document
+Start element: "root"
+Start element: "person"
+Test 3: Complex XML Structure
+Complex XML generated, size:
+Complex XML parsed successfully
+Books found: 3
+Chapters found: 9
+Test 4: Namespace Support
+Namespace XML generated, size:
+Element:
+Namespace URI:
+Test 5: Error Handling
+Successfully detected XML error:
+Qt XML Stream Test completed successfully

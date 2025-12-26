@@ -1,0 +1,34 @@
+# Fix for AIX truncate macro conflict with QByteArray::truncate() method
+--- src/corelib/text/qbytearray.h.orig
++++ src/corelib/text/qbytearray.h
+@@ -54,0 +55,9 @@
++
++#ifdef _AIX
++// AIX defines truncate as a macro which conflicts with QByteArray::truncate()
++// Undefine it permanently for Qt usage
++#ifdef truncate
++#undef truncate
++#endif
++#endif
++
+@@ -56,1 +65,0 @@
+-#error qbytearray.h must be included before any header file that defines truncate
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

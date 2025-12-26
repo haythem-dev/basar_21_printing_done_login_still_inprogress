@@ -1,0 +1,36 @@
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o decimal_arithmetic main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+Build successful - binary created
+
+=========================================
+  Checking linked libraries
+=========================================
+	 ../../../library/lib/debug/libbasarcmnutil.so
+	 ../../../library/lib/debug/libbasardebug.so
+	 ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+
+=========================================
+  Running test
+=========================================
+
+Basar Decimal Arithmetic Test
+Test 1: Decimal Creation
+Decimal from string '123.45': 12345,0
+Test 2: Decimal Addition
+123.45 + 67.89 = 19134,0
+Test 3: Decimal Subtraction
+123.45 - 67.89 = 5556,0
+Test 4: Decimal Multiplication
+123.45 * 67.89 = 83810205,0
+Test 5: Decimal Comparison
+100.00 < 200.00: true
+200.00 > 100.00: true
+Test 6: Decimal Precision
+Precise value: 123456789,0
+All decimal operations completed successfully
+
+=========================================
+  Test exit code: 0
+=========================================

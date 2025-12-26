@@ -1,0 +1,16 @@
+REGRESSION_START: FTP Download Test
+Build completed successfully!
+Library dependencies:
+FTP_SCRIPT_CREATED:
+EXECUTING_FTP_DOWNLOAD
+FTP_PROCESS_EXIT_CODE: 0
+DOWNLOAD_SUCCESS: File created
+FILE_SIZE: 891
+REGRESSION_RESULT: DOWNLOAD_COMPLETED
+REGRESSION_END: SUCCESS
+Test execution completed with exit code: 0
+File exists: YES
+qmake -makefile ftp_download.pro
+gmake
+g++ -pthread
+Binary verification patterns:

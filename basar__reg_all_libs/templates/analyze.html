@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyze: {{ file_info.name }}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .info-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .info-item {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #667eea;
+        }
+        
+        .content-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        
+        .content-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        pre {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        .binary-notice {
+            color: #666;
+            font-style: italic;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="back-link">← Back to Files</a>
+        
+        <h1>File Analysis</h1>
+        
+        <div class="info-section">
+            <div class="info-item">
+                <span class="info-label">Filename:</span> {{ file_info.name }}
+            </div>
+            <div class="info-item">
+                <span class="info-label">Size:</span> {{ file_info.size }} bytes
+            </div>
+            <div class="info-item">
+                <span class="info-label">Path:</span> {{ file_info.path }}
+            </div>
+        </div>
+        
+        <div class="content-section">
+            <h2>File Content</h2>
+            {% if content and content != "Binary file or unable to read as text" %}
+                <pre>{{ content }}</pre>
+            {% else %}
+                <p class="binary-notice">{{ content }}</p>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

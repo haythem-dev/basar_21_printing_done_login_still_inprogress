@@ -1,0 +1,9 @@
+Updating 'locale_en.ts'...
+Updating 'locale_de.ts'...
+Found 1 source text(s) (1 new and 0 already existing)
+Loaded translation for language: "en"
+Loaded translation for language: "de"
+Translation file "locale_fr.qm" not found.
+Continuing with default language.
+^"Hallo, Welt
+^"Hello, world

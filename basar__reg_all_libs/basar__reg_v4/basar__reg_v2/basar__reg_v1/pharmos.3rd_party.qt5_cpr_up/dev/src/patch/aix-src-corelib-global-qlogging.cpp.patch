@@ -1,0 +1,20 @@
+# Fix for AIX truncate macro interfering with QByteArray::truncate() method calls
+--- src/corelib/global/qlogging.cpp.orig
++++ src/corelib/global/qlogging.cpp
+@@ -41,0 +42,8 @@
++#ifdef _AIX
++// AIX truncate macro interferes with QByteArray::truncate() method calls
++// Undefine it for this compilation unit
++#ifdef truncate
++#undef truncate
++#endif
++#endif
++
+
+
+
+
+
+
+
+

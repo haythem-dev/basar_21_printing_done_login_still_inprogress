@@ -1,0 +1,5 @@
+pkg-install/lib/libQt5Core.so
+Directory tree for:
+std=c++17
+libQt5Bootstrap.a
+metatypes

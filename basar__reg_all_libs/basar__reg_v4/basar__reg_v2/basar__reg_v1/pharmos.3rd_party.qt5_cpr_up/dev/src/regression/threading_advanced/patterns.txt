@@ -1,0 +1,18 @@
+pkg-install/lib/libQt5Core.so
+Starting Advanced Threading Test
+Test 1: Basic QThread
+Worker thread
+Test 2: QThreadPool
+Thread pool max threads:
+All thread pool tasks completed
+Test 3: Producer-Consumer with Mutex
+Producer: produced
+Consumer: consumed
+Test 4: QSemaphore
+acquired semaphore
+releasing semaphore
+Semaphore test completed
+Test 5: QAtomicInt
+Atomic counter final value: 5000
+Expected value: 5000
+Advanced Threading Test completed successfully

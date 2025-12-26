@@ -1,0 +1,22 @@
+
+Basar Regression Test: ldap_config_test
+Test 1: Configuration Object Creation
+Configuration object created successfully
+Test 2: LDAP Server Configuration
+LDAP server configuration accessible
+Test 3: TCP Port Configuration
+TCP port configuration accessible
+Test 4: Distinguished Name Configuration
+Distinguished name configuration accessible
+Test 5: Login Type Detection
+Login type configuration accessible
+Test 6: Namespace and Type Availability
+basar::login namespace available
+Test 7: Default Configuration Values
+Default configuration values present
+Test 8: Configuration Consistency
+Configuration data types consistent
+All LDAP configuration tests passed!
+Build successful - binary created
+Test exit code: 0
+libbasarlogin.so

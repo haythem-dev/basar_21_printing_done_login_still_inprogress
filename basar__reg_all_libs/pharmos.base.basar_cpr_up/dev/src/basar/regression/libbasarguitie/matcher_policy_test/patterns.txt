@@ -1,0 +1,15 @@
+Basar Regression Test: matcher_policy_test
+Test 1: Matcher Policy Enum Values
+Matcher policy enum values verified
+Test 2: Policy Combination
+Policy combination verified
+Test 3: Policy Type
+Policy type verified
+Test 4: Policy Checking
+Policy checking verified
+Test 5: Policy Semantics
+Policy semantics verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarguitie.so

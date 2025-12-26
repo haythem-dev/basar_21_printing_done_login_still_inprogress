@@ -1,0 +1,36 @@
+# Fix for AIX truncate macro conflict with QString methods
+--- src/corelib/text/qstring.h.orig
++++ src/corelib/text/qstring.h
+@@ -44,0 +45,8 @@
++#ifdef _AIX
++// AIX defines truncate as a macro which conflicts with Qt methods
++// Undefine it permanently for Qt usage
++#ifdef truncate
++#undef truncate
++#endif
++#endif
++
+@@ -62,4 +69,0 @@
+-#ifdef truncate
+-#error qstring.h must be included before any header file that defines truncate
+-#endif
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

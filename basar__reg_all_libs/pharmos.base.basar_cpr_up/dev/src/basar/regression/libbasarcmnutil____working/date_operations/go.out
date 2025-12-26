@@ -1,0 +1,40 @@
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o date_operations main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+Build successful - binary created
+
+=========================================
+  Checking linked libraries
+=========================================
+	 ../../../library/lib/debug/libbasarcmnutil.so
+	 ../../../library/lib/debug/libbasardebug.so
+	 ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+	 ../../../../../ext/openssl/lib/libssl.so
+	 ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+	 ../../../../../ext/zlib/lib/debug/libz.so
+
+=========================================
+  Running test
+=========================================
+
+Basar Date Operations Test
+Test 1: Date Creation
+Created date: 
+Year: 2024
+Month: 4
+Day: 22
+Test 2: Date Arithmetic
+After adding 10 days: 
+Test 3: Calculate Days Between Dates
+Days from date1 to date2: -20
+Test 4: Date Validation
+2024-02-29 is valid: yes
+2023-02-29 is valid: yes
+Test 5: Current Date
+Today is valid: yes
+All date operations completed successfully
+
+=========================================
+  Test exit code: 0
+=========================================

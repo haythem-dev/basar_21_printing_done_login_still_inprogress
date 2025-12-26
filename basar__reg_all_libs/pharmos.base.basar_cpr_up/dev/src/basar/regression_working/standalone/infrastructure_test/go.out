@@ -1,0 +1,46 @@
+g++ -g -std=c++17 -maix64 -o infrastructure_test main.cpp -maix64
+
+Build successful - binary created
+
+=========================================
+  Linked libraries
+=========================================
+infrastructure_test needs:
+	 /usr/lib/libc.a(shr_64.o)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/ppc64/libstdc++.a(libstdc++.so.6)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/ppc64/libgcc_s.a(shr.o)
+	 /unix
+	 /usr/lib/libcrypt.a(shr_64.o)
+
+=========================================
+  Basar Regression Test: infrastructure_test
+=========================================
+
+Test 1: Build System Validation
+  Build successful - binary created
+  Compilation verified
+
+Test 2: Standard Library Availability
+  iostream available
+  cstdlib available
+  Standard library verified
+
+Test 3: Output Stream Functionality
+  stdout stream operational
+  Output stream verified
+
+Test 4: Command Line Arguments
+  argc value: 1
+  argv accessible: yes
+  Command line arguments verified
+
+Test 5: Exit Code Handling
+  Test execution: PASS
+  Exit code: 0
+  Exit code handling verified
+
+=========================================
+  Test completed successfully
+=========================================
+
+Test execution completed with exit code 0

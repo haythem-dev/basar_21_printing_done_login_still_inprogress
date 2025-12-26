@@ -1,0 +1,51 @@
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # cd basar
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # ls
+basar.sln               libbasar_definitions.h  libbasardbaspect        libbasarguitie          libbasarqtwidget        makefile                regression
+changelog.txt           libbasar_pkgversion.h   libbasardbsql           libbasarlogin           libopensslwrap          makefile.inc            regression_v1
+data                    libbasarappl            libbasardebug           libbasarprinting        library                 proc                    release.md
+doxygen                 libbasarcmnutil         libbasarguiqt           libbasarproperty        macro.h                 props                   test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # cd library
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library # ls
+include  lib
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library # cd include
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/include # ls
+libbasar_definitions.h                               libbasarcmnutil_i18nstring.h                         libbasardbaspect_accessmethod.h                      libbasardbsql_resultsetref.h
+libbasar_pkgversion.h                                libbasarcmnutil_iattachment.h                        libbasardbaspect_accessor.h                          libbasardbsql_sqldiagnosticsref.h
+libbasar_printingol.h                                libbasarcmnutil_iattachmentptr.h                     libbasardbaspect_accessorexecutelistener.h           libbasardbsql_statementref.h
+libbasarappl.h                                       libbasarcmnutil_icredential.h                        libbasardbaspect_accessorpropertytable.h             libbasardebug.h
+libbasarappl_eventmacros.h                           libbasarcmnutil_icredentialptr.h                     libbasardbaspect_accessorpropertytable_yiterator.h   libbasardebug_functions.h
+libbasarappl_functions.h                             libbasarcmnutil_iremotetaskcallback.h                libbasardbaspect_connectionref.h                     libbasarlogin.h
+libbasarappl_syseventexecuter.hpp                    libbasarcmnutil_iremotetaskcallbackptr.h             libbasardbaspect_definitions.h                       libbasarlogin_definitions.h
+libbasarappl_systemeventmanager.h                    libbasarcmnutil_iremotetaskptr.h                     libbasardbaspect_exceptions.h                        libbasarlogin_exceptions.h
+libbasarcmnutil.h                                    libbasarcmnutil_iremotetaskresultptr.h               libbasardbaspect_functions.h                         libbasarlogin_functions.h
+libbasarcmnutil_attachment.h                         libbasarcmnutil_locale.h                             libbasardbaspect_iaccessor.h                         libbasarlogin_manager.h
+libbasarcmnutil_bstring.h                            libbasarcmnutil_logging.h                            libbasardbaspect_logmacros.h                         libbasarproperty.h
+libbasarcmnutil_cmdline.h                            libbasarcmnutil_parameterlist.h                      libbasardbaspect_macros.h                            libbasarproperty_algorithm.h
+libbasarcmnutil_codec.h                              libbasarcmnutil_pattern.h                            libbasardbaspect_manager.h                           libbasarproperty_definitions.h
+libbasarcmnutil_config.h                             libbasarcmnutil_pipedprocess.h                       libbasardbaspect_sqlstringbuilder.h                  libbasarproperty_exceptions.h
+libbasarcmnutil_credentialbase.h                     libbasarcmnutil_print.h                              libbasardbaspect_stringbuildertypeindexes.h          libbasarproperty_functions.h
+libbasarcmnutil_credentialbaseptr.h                  libbasarcmnutil_remote.h                             libbasardbsql.h                                      libbasarproperty_propertydescription.h
+libbasarcmnutil_credentialsref.h                     libbasarcmnutil_remoteendpoint.h                     libbasardbsql_api.h                                  libbasarproperty_propertydescriptionlist_iterator.h
+libbasarcmnutil_date.h                               libbasarcmnutil_remotetaskexceptions.h               libbasardbsql_connectionlist_iterator.h              libbasarproperty_propertydescriptionlistref.h
+libbasarcmnutil_datetime.h                           libbasarcmnutil_remotetaskref.h                      libbasardbsql_connectionref.h                        libbasarproperty_propertystate.h
+libbasarcmnutil_datetimeexception.h                  libbasarcmnutil_remotetaskresultref.h                libbasardbsql_databaseinfo.h                         libbasarproperty_propertystateset.h
+libbasarcmnutil_datetimetools.h                      libbasarcmnutil_remotetasksubmitter.h                libbasardbsql_definitions.h                          libbasarproperty_propertytable_xiterator.h
+libbasarcmnutil_datetypes_common.h                   libbasarcmnutil_remotetasksubmitterbase.h            libbasardbsql_exceptions.h                           libbasarproperty_propertytable_yiterator.h
+libbasarcmnutil_decimal.h                            libbasarcmnutil_socket.h                             libbasardbsql_functions.h                            libbasarproperty_propertytableref.h
+libbasarcmnutil_definitions.h                        libbasarcmnutil_sshsessionptr.h                      libbasardbsql_insertsetref.h                         libbasarproperty_propertytablesnapshotref.h
+libbasarcmnutil_email.h                              libbasarcmnutil_timespan.h                           libbasardbsql_manager.h                              libbasarproperty_propertytype.h
+libbasarcmnutil_exceptions.h                         libbasarcmnutil_userpasscredential.h                 libbasardbsql_managerimpl.h                          libbasarproperty_saveaccessiterator.hpp
+libbasarcmnutil_functions.h                          libbasardbaspect.h                                   libbasardbsql_preparedstatementref.h                 libbasarproperty_supportedstate.h
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/include # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library # cd lib
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib # ls
+debug    release
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib # cd debug
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib/debug # ls
+libbasarappl.so      libbasarcmnutil.so   libbasardbaspect.so  libbasardbsql.so     libbasardebug.so     libbasarlogin.so     libbasarprinting.so  libbasarproperty.so  libopensslwrap.so
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib/debug #

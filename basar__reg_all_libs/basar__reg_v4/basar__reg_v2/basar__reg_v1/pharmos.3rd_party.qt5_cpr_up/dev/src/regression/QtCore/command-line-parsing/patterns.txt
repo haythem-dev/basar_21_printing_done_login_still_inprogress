@@ -1,0 +1,5 @@
+Usage: ./commandline_example \[options\]
+Command Line Parsing Example with QCommandLineParser
+pkg-install/lib/libQt5Core.so
+ --help-all
+Hello, dude

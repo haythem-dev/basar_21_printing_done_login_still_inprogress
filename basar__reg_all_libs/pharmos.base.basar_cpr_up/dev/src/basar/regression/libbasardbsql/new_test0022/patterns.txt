@@ -1,0 +1,6 @@
+Basar Regression Test: new_test0022
+Test: new_test0022
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

@@ -1,0 +1,15 @@
+Basar Regression Test: table_widget_test
+Test 1: Table Dimensions
+Table dimensions verified
+Test 2: Column Headers
+Column headers verified
+Test 3: Cell Addressing
+Cell addressing verified
+Test 4: Selection Model
+Selection model verified
+Test 5: Table Resize Operations
+Table resize operations verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarqtwidget.so

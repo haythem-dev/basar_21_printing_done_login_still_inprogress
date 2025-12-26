@@ -1,0 +1,222 @@
+
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ./do_regression.sh
+Cleaning old test outputs...
+=========================================
+  Basar Regression Test Suite
+=========================================
+
+Regression directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression
+Start time: Sun Nov 23 19:28:22 CET 2025
+
+=========================================
+Test 1: libbasarcmnutil/date_operations
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/date_operations/go.out[ for patterns from ]basar/regression/libbasarcmnutil/date_operations/patterns.txt[
+Pattern 'Basar Date Operations Test' NOT found.
+Pattern 'Test 1: Date Creation' NOT found.
+Pattern 'Created date: 2024-04-22' NOT found.
+Pattern 'Year: 2024' NOT found.
+Pattern 'Month: 4' NOT found.
+Pattern 'Day: 22' NOT found.
+Pattern 'Test 2: Date Arithmetic' NOT found.
+Pattern 'After adding 10 days: 2024-05-02' NOT found.
+Pattern 'Test 3: Calculate Days Between Dates' NOT found.
+Pattern 'Days from date1 to date2: 10' NOT found.
+Pattern 'Test 4: Date Validation' NOT found.
+Pattern '2024-02-29 is valid: yes' NOT found.
+Pattern '2023-02-29 is valid: no' NOT found.
+Pattern 'Test 5: Current Date' NOT found.
+Pattern 'Today is valid: yes' NOT found.
+Pattern 'All date operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 19 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -o date_operations main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  In file included from ../../../library/include/libbasarcmnutil.h:31,
+                   from main.cpp:1:
+  ../../../library/include/libbasarcmnutil_logging.h:49:10: fatal error: boost/scoped_ptr.hpp: No such file or directory
+     49 | #include <boost/scoped_ptr.hpp>
+        |          ^~~~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: date_operations] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 2: libbasarcmnutil/decimal_arithmetic
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/decimal_arithmetic/go.out[ for patterns from ]basar/regression/libbasarcmnutil/decimal_arithmetic/patterns.txt[
+Pattern 'Basar Decimal Arithmetic Test' NOT found.
+Pattern 'Test 1: Decimal Creation' NOT found.
+Pattern 'Decimal from string '123.45': 123.45' NOT found.
+Pattern 'Test 2: Decimal Addition' NOT found.
+Pattern '123.45 + 67.89 = 191.34' NOT found.
+Pattern 'Test 3: Decimal Subtraction' NOT found.
+Pattern '123.45 - 67.89 = 55.56' NOT found.
+Pattern 'Test 4: Decimal Multiplication' NOT found.
+Pattern 'Test 5: Decimal Comparison' NOT found.
+Pattern '100.00 < 200.00: true' NOT found.
+Pattern '200.00 > 100.00: true' NOT found.
+Pattern 'Test 6: Decimal Precision' NOT found.
+Pattern 'All decimal operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 16 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -o decimal_arithmetic main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  In file included from ../../../library/include/libbasarcmnutil.h:31,
+                   from main.cpp:1:
+  ../../../library/include/libbasarcmnutil_logging.h:49:10: fatal error: boost/scoped_ptr.hpp: No such file or directory
+     49 | #include <boost/scoped_ptr.hpp>
+        |          ^~~~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: decimal_arithmetic] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 3: libbasarcmnutil/hello_basar
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/hello_basar/go.out[ for patterns from ]basar/regression/libbasarcmnutil/hello_basar/patterns.txt[
+Pattern 'Hello from Basar!' NOT found.
+Pattern 'Version:' NOT found.
+Pattern 'Test completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 6 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -o hello_basar main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  In file included from ../../../library/include/libbasarcmnutil.h:31,
+                   from main.cpp:1:
+  ../../../library/include/libbasarcmnutil_logging.h:49:10: fatal error: boost/scoped_ptr.hpp: No such file or directory
+     49 | #include <boost/scoped_ptr.hpp>
+        |          ^~~~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: hello_basar] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 4: standalone/infrastructure_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test/go.sh
+
+
+==> Checking ]basar/regression/standalone/infrastructure_test/go.out[ for patterns from ]basar/regression/standalone/infrastructure_test/patterns.txt[
+Pattern '' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Basar Regression Infrastructure Test' found.
+Pattern 'Test execution: PASS' found.
+Pattern 'Exit code: 0' found.
+Pattern 'Test execution completed with exit code 0' found.
+==> 6 out of 6 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  4
+Passed:       1
+Failed:       3
+
+End time: Sun Nov 23 19:28:24 CET 2025
+
+FAILURE: 3 of 4 tests failed ✗
+
+See /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/regression.summary for details
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # cd library
+ksh: library:  not found.
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # ls
+basar         basar_trial   build.xml     experimental  ivy.xml
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev # cd ext
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext # ls
+boost        ghostscript  libssh2      log4cplus    openldap     openssl      qt5          unittestpp   zlib
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext # cd boost
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost # ls
+include    lib        libstatic
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost # cd include
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost/include # ls
+boost
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost/include # cd boost
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost/include/boost # ls
+accumulators                   concept                        filesystem.hpp                 intrusive_ptr.hpp              multi_index_container.hpp      property_map                   swap.hpp
+algorithm                      concept_archetype.hpp          flyweight                      io                             multi_index_container_fwd.hpp  property_tree                  system
+align                          concept_check                  flyweight.hpp                  io_fwd.hpp                     multiprecision                 proto                          test
+align.hpp                      concept_check.hpp              foreach.hpp                    iostreams                      next_prior.hpp                 ptr_container                  thread
+aligned_storage.hpp            config                         foreach_fwd.hpp                is_placeholder.hpp             non_type.hpp                   python                         thread.hpp
+any.hpp                        config.hpp                     format                         iterator                       noncopyable.hpp                python.hpp                     throw_exception.hpp
+archive                        container                      format.hpp                     iterator.hpp                   nondet_random.hpp              qvm                            timer
+array.hpp                      container_hash                 function                       iterator_adaptors.hpp          none.hpp                       random                         timer.hpp
+asio                           context                        function.hpp                   lambda                         none_t.hpp                     random.hpp                     token_functions.hpp
+asio.hpp                       contract                       function_equal.hpp             lexical_cast                   numeric                        range                          token_iterator.hpp
+assert.hpp                     contract.hpp                   function_output_iterator.hpp   lexical_cast.hpp               operators.hpp                  range.hpp                      tokenizer.hpp
+assign                         contract_macro.hpp             function_types                 limits.hpp                     operators_v1.hpp               ratio                          tti
+assign.hpp                     convert                        functional                     local_function                 optional                       ratio.hpp                      tuple
+atomic                         convert.hpp                    functional.hpp                 local_function.hpp             optional.hpp                   rational.hpp                   type.hpp
+atomic.hpp                     core                           fusion                         locale                         outcome                        ref.hpp                        type_erasure
+beast                          coroutine                      generator_iterator.hpp         locale.hpp                     outcome.hpp                    regex                          type_index
+beast.hpp                      coroutine2                     geometry                       lockfree                       parameter                      regex.h                        type_index.hpp
+bimap                          crc.hpp                        geometry.hpp                   log                            parameter.hpp                  regex.hpp                      type_traits
+bimap.hpp                      cregex.hpp                     get_pointer.hpp                logic                          pending                        regex_fwd.hpp                  type_traits.hpp
+bind                           cstdfloat.hpp                  gil                            make_default.hpp               phoenix                        safe_numerics                  typeof
+bind.hpp                       cstdint.hpp                    gil.hpp                        make_shared.hpp                phoenix.hpp                    scope_exit.hpp                 units
+blank.hpp                      cstdlib.hpp                    graph                          make_unique.hpp                pointee.hpp                    scoped_array.hpp               unordered
+blank_fwd.hpp                  current_function.hpp           hana                           math                           pointer_cast.hpp               scoped_ptr.hpp                 unordered_map.hpp
+call_traits.hpp                cxx11_char_types.hpp           hana.hpp                       math_fwd.hpp                   pointer_to_other.hpp           serialization                  unordered_set.hpp
+callable_traits                date_time                      heap                           mem_fn.hpp                     poly_collection                shared_array.hpp               utility
+callable_traits.hpp            date_time.hpp                  histogram                      memory_order.hpp               polygon                        shared_container_iterator.hpp  utility.hpp
+cast.hpp                       detail                         histogram.hpp                  metaparse                      polymorphic_cast.hpp           shared_ptr.hpp                 uuid
+cerrno.hpp                     dll                            hof                            metaparse.hpp                  polymorphic_pointer_cast.hpp   signals2                       variant
+checked_delete.hpp             dll.hpp                        hof.hpp                        move                           pool                           signals2.hpp                   variant.hpp
+chrono                         dynamic_bitset                 icl                            mp11                           predef                         smart_ptr                      version.hpp
+chrono.hpp                     dynamic_bitset.hpp             implicit_cast.hpp              mp11.hpp                       predef.h                       smart_ptr.hpp                  visit_each.hpp
+circular_buffer                dynamic_bitset_fwd.hpp         indirect_reference.hpp         mpi                            preprocessor                   sort                           vmd
+circular_buffer.hpp            enable_shared_from_this.hpp    integer                        mpi.hpp                        preprocessor.hpp               spirit                         wave
+circular_buffer_fwd.hpp        endian                         integer.hpp                    mpl                            process                        spirit.hpp                     wave.hpp
+compatibility                  exception                      integer_fwd.hpp                msm                            process.hpp                    stacktrace                     weak_ptr.hpp
+compressed_pair.hpp            exception_ptr.hpp              integer_traits.hpp             multi_array                    program_options                stacktrace.hpp                 winapi
+compute                        fiber                          interprocess                   multi_array.hpp                program_options.hpp            statechart                     xpressive
+compute.hpp                    filesystem                     intrusive                      multi_index                    progress.hpp                   static_assert.hpp              yap
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost/include/boost # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost/include # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost # cd lib
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost/lib # ls
+cmake                            libboost_contract.so             libboost_graph.so                libboost_math_c99.so             libboost_math_tr1l.so            libboost_serialization.so        libboost_unit_test_framework.so
+libboost_atomic.a                libboost_coroutine.a             libboost_iostreams.a             libboost_math_c99f.a             libboost_prg_exec_monitor.a      libboost_system.a                libboost_wave.a
+libboost_atomic.so               libboost_coroutine.so            libboost_iostreams.so            libboost_math_c99f.so            libboost_prg_exec_monitor.so     libboost_system.so               libboost_wave.so
+libboost_chrono.a                libboost_date_time.a             libboost_locale.a                libboost_math_c99l.a             libboost_program_options.a       libboost_thread.a                libboost_wserialization.a
+libboost_chrono.so               libboost_date_time.so            libboost_locale.so               libboost_math_c99l.so            libboost_program_options.so      libboost_thread.so               libboost_wserialization.so
+libboost_container.a             libboost_fiber.a                 libboost_log.a                   libboost_math_tr1.a              libboost_random.a                libboost_timer.a
+libboost_container.so            libboost_fiber.so                libboost_log.so                  libboost_math_tr1.so             libboost_random.so               libboost_timer.so
+libboost_context.a               libboost_filesystem.a            libboost_log_setup.a             libboost_math_tr1f.a             libboost_regex.a                 libboost_type_erasure.a
+libboost_context.so              libboost_filesystem.so           libboost_log_setup.so            libboost_math_tr1f.so            libboost_regex.so                libboost_type_erasure.so
+libboost_contract.a              libboost_graph.a                 libboost_math_c99.a              libboost_math_tr1l.a             libboost_serialization.a         libboost_unit_test_framework.a
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext/boost/lib #

@@ -1,0 +1,5 @@
+\-std=c++17
+pkg-install/include/QtCore
+pkg-install/lib/libQt5Core.so
+Application started. Waiting for event...
+Timeout occurred! Event handled.

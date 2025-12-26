@@ -1,0 +1,10 @@
+Date 1: 1685-03-21 is a Wednesday
+Date 2: 1750-07-28 is a Tuesday
+Difference in days: 23869
+March 1685
+Date 1: 2024-04-22 is a Monday
+Date 2: 2024-04-10 is a Wednesday
+Difference in days: 12
+April 2024
+std=c++17
+4  5  6  7  8  9 10

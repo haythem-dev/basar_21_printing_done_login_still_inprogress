@@ -1,0 +1,12 @@
+diff -urN a/src/qftp/qftp.pro b/src/qftp/qftp.pro
+--- a/src/qftp/qftp.pro	2014-01-30 11:18:39.000000000 +0100
++++ b/src/qftp/qftp.pro	2019-03-22 13:54:26.047497500 +0100
+@@ -9,6 +9,7 @@
+ MODULE = ftp
+ 
+ load(qt_module)
++CONFIG -= create_cmake
+ 
+ # Input
+ HEADERS += qftp.h qurlinfo.h
+

@@ -1,0 +1,22 @@
+Basar Regression Test: permission_check_test
+Test 1: Permission Types
+Read permission type validated
+Write permission type validated
+Execute permission type validated
+Admin permission type validated
+Test 2: Permission Check
+Has permission check validated
+Permission denied check validated
+Test 3: Role-Based Permissions
+Role assignment validated
+Role-based access verified
+Test 4: Permission Inheritance
+Parent permission inheritance validated
+Permission override verified
+Test 5: Permission Caching
+Permission cache validated
+Cache invalidation verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarlogin.so

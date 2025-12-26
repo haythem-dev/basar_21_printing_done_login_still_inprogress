@@ -1,0 +1,4 @@
+Usage: ./tablemodel <input.html>
+Name.*Age
+Alice.*30
+Charlie.*35

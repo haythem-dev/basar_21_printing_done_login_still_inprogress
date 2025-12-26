@@ -1,0 +1,11 @@
+
+Basar Regression Test: database_info_test
+Test 1: Default DatabaseInfo
+Created empty DatabaseInfo object
+Test 2: ODBC Configuration
+ODBC DSN set successfully
+Test 3: Informix Configuration
+Informix configuration set successfully
+Test completed successfully
+Build successful - binary created
+Test exit code: 0

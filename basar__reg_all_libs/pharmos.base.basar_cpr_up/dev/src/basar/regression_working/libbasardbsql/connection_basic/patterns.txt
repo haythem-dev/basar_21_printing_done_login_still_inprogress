@@ -1,0 +1,8 @@
+
+Basar Regression Test: connection_basic
+DatabaseInfo object created successfully
+libbasardbsql version:
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasardbsql.so

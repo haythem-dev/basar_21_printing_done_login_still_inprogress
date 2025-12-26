@@ -1,0 +1,17 @@
+Basar Regression Test: exception_handling
+Test 1: DbException construction
+DbException caught successfully
+Test 2: Exception hierarchy
+Exception caught as base class
+Test 3: Exception message content
+Exception message accessible: yes
+Exception contains error info: verified
+Test 4: Nested exception handling
+Inner exception caught
+Rethrown exception caught successfully
+Test 5: Exception with std::exception compatibility
+Caught as std::exception: success
+what() method available: verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0

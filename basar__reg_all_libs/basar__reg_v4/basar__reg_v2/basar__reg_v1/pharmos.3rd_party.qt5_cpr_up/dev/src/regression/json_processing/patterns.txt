@@ -1,0 +1,16 @@
+pkg-install/lib/libQt5Core.so
+Starting JSON Processing Test
+JSON object created
+JSON string (compact):
+JSON string (pretty):
+JSON parsed successfully
+Parsed data:
+Name: "John Doe"
+Age: 30
+Active: true
+Hobbies:
+Address:
+Number array:
+Data types:
+Successfully detected invalid JSON:
+JSON Processing Test completed successfully

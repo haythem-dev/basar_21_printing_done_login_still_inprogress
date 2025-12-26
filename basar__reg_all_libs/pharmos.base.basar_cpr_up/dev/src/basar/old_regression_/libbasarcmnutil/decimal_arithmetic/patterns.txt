@@ -1,0 +1,16 @@
+Basar Decimal Arithmetic Test
+Test 1: Decimal Creation
+Decimal from string '123.45': 123.45
+Test 2: Decimal Addition
+123.45 + 67.89 = 191.34
+Test 3: Decimal Subtraction
+123.45 - 67.89 = 55.56
+Test 4: Decimal Multiplication
+Test 5: Decimal Comparison
+100.00 < 200.00: true
+200.00 > 100.00: true
+Test 6: Decimal Precision
+All decimal operations completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

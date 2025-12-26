@@ -1,0 +1,233 @@
+
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # cd basar
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # cd regression
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ls
+check_patterns.sh   do_regression.sh    libbasarcmnutil     new_test.sh         regression.summary  standalone
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ./do_regression.sh
+Cleaning old test outputs...
+=========================================
+  Basar Regression Test Suite
+=========================================
+
+Regression directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression
+Start time: Sun Nov 23 18:49:45 CET 2025
+
+=========================================
+Test 1: libbasarcmnutil/date_operations
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/date_operations/go.out[ for patterns from ]basar/regression/libbasarcmnutil/date_operations/patterns.txt[
+Pattern 'Basar Date Operations Test' NOT found.
+Pattern 'Test 1: Date Creation' NOT found.
+Pattern 'Created date: 2024-04-22' NOT found.
+Pattern 'Year: 2024' NOT found.
+Pattern 'Month: 4' NOT found.
+Pattern 'Day: 22' NOT found.
+Pattern 'Test 2: Date Arithmetic' NOT found.
+Pattern 'After adding 10 days: 2024-05-02' NOT found.
+Pattern 'Test 3: Calculate Days Between Dates' NOT found.
+Pattern 'Days from date1 to date2: 10' NOT found.
+Pattern 'Test 4: Date Validation' NOT found.
+Pattern '2024-02-29 is valid: yes' NOT found.
+Pattern '2023-02-29 is valid: no' NOT found.
+Pattern 'Test 5: Current Date' NOT found.
+Pattern 'Today is valid: yes' NOT found.
+Pattern 'All date operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 19 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../.. -I../../../../../ext/log4cplus/include -o date_operations main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: date_operations] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 2: libbasarcmnutil/decimal_arithmetic
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/decimal_arithmetic/go.out[ for patterns from ]basar/regression/libbasarcmnutil/decimal_arithmetic/patterns.txt[
+Pattern 'Basar Decimal Arithmetic Test' NOT found.
+Pattern 'Test 1: Decimal Creation' NOT found.
+Pattern 'Decimal from string '123.45': 123.45' NOT found.
+Pattern 'Test 2: Decimal Addition' NOT found.
+Pattern '123.45 + 67.89 = 191.34' NOT found.
+Pattern 'Test 3: Decimal Subtraction' NOT found.
+Pattern '123.45 - 67.89 = 55.56' NOT found.
+Pattern 'Test 4: Decimal Multiplication' NOT found.
+Pattern 'Test 5: Decimal Comparison' NOT found.
+Pattern '100.00 < 200.00: true' NOT found.
+Pattern '200.00 > 100.00: true' NOT found.
+Pattern 'Test 6: Decimal Precision' NOT found.
+Pattern 'All decimal operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 16 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../.. -I../../../../../ext/log4cplus/include -o decimal_arithmetic main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: decimal_arithmetic] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 3: libbasarcmnutil/hello_basar
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/hello_basar/go.out[ for patterns from ]basar/regression/libbasarcmnutil/hello_basar/patterns.txt[
+Pattern 'Hello from Basar!' NOT found.
+Pattern 'Version:' NOT found.
+Pattern 'Test completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 6 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../.. -I../../../../../ext/log4cplus/include -o hello_basar main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: hello_basar] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 4: standalone/infrastructure_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test/go.sh
+
+
+==> Checking ]basar/regression/standalone/infrastructure_test/go.out[ for patterns from ]basar/regression/standalone/infrastructure_test/patterns.txt[
+Pattern '' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Basar Regression Infrastructure Test' found.
+Pattern 'Test execution: PASS' found.
+Pattern 'Exit code: 0' found.
+Pattern 'Test execution completed with exit code 0' found.
+==> 6 out of 6 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  4
+Passed:       1
+Failed:       3
+
+End time: Sun Nov 23 18:49:47 CET 2025
+
+FAILURE: 3 of 4 tests failed ✗
+
+See /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/regression.summary for details
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # ls
+basar         basar_trial   build.xml     experimental  ivy.xml
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev # ls
+docs  ext   src
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev # cd ext
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext # ls -la
+total 8
+drwxrwx---    2 h.benabd phoenix        4096 Nov 23 10:29 .
+drwxrwx---    5 h.benabd phoenix         256 Nov 23 10:28 ..
+lrwxrwxrwx    1 h.benabd phoenix         113 Nov 23 10:28 boost -> /software/home/benabdelaziz/.ivy2/cache/org.boost/boost/zip_unpackeds/1.70.0-4-gcc12-aix/boost-1.70.0-4-gcc12-aix
+lrwxrwxrwx    1 h.benabd phoenix         133 Nov 23 10:29 ghostscript -> /software/home/benabdelaziz/.ivy2/cache/com.ghostscript/ghostscript/zip_unpackeds/10.02.0-2-gcc12-aix/ghostscript-10.02.0-2-gcc12-aix
+lrwxrwxrwx    1 h.benabd phoenix         117 Nov 23 10:29 libssh2 -> /software/home/benabdelaziz/.ivy2/cache/org.libssh2/libssh2/zip_unpackeds/1.8.1-7-gcc12-aix/libssh2-1.8.1-7-gcc12-aix
+lrwxrwxrwx    1 h.benabd phoenix         125 Nov 23 10:28 log4cplus -> /software/home/benabdelaziz/.ivy2/cache/net.sourceforge/log4cplus/zip_unpackeds/1.2.2-8-gcc12-aix/log4cplus-1.2.2-8-gcc12-aix
+lrwxrwxrwx    1 h.benabd phoenix         122 Nov 23 10:29 openldap -> /software/home/benabdelaziz/.ivy2/cache/org.openldap/openldap/zip_unpackeds/2.4.47-7-gcc12-aix/openldap-2.4.47-7-gcc12-aix
+lrwxrwxrwx    1 h.benabd phoenix         121 Nov 23 10:29 openssl -> /software/home/benabdelaziz/.ivy2/cache/org.openssl/openssl/zip_unpackeds/1.1.1b-13-gcc12-aix/openssl-1.1.1b-13-gcc12-aix
+lrwxrwxrwx    1 h.benabd phoenix         103 Nov 23 10:29 qt5 -> /software/home/benabdelaziz/.ivy2/cache/io.qt/qt5/zip_unpackeds/5.15.16-gcc12-aix/qt5-5.15.16-gcc12-aix
+lrwxrwxrwx    1 h.benabd phoenix         110 Nov 23 10:29 unittestpp -> /software/home/benabdelaziz/.ivy2/cache/com.github/unittestpp/zip_unpackeds/2.0.0-6-aix/unittestpp-2.0.0-6-aix
+lrwxrwxrwx    1 h.benabd phoenix         110 Nov 23 10:29 zlib -> /software/home/benabdelaziz/.ivy2/cache/net.zlib/zlib/zip_unpackeds/1.2.11-7-gcc12-aix/zlib-1.2.11-7-gcc12-aix
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext # cd ../src
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # ls
+basar         basar_trial   build.xml     experimental  ivy.xml
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # cd basar
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # ls
+basar.sln               doxygen                 libbasarappl            libbasardbsql           libbasarguitie          libbasarproperty        library                 makefile.inc            regression
+changelog.txt           libbasar_definitions.h  libbasarcmnutil         libbasardebug           libbasarlogin           libbasarqtwidget        macro.h                 proc                    release.md
+data                    libbasar_pkgversion.h   libbasardbaspect        libbasarguiqt           libbasarprinting        libopensslwrap          makefile                props                   test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # cd library
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library # ls
+include  lib
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library # cd include
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/include # ls
+libbasar_definitions.h                               libbasarcmnutil_i18nstring.h                         libbasardbaspect_accessmethod.h                      libbasardbsql_resultsetref.h
+libbasar_pkgversion.h                                libbasarcmnutil_iattachment.h                        libbasardbaspect_accessor.h                          libbasardbsql_sqldiagnosticsref.h
+libbasar_printingol.h                                libbasarcmnutil_iattachmentptr.h                     libbasardbaspect_accessorexecutelistener.h           libbasardbsql_statementref.h
+libbasarappl.h                                       libbasarcmnutil_icredential.h                        libbasardbaspect_accessorpropertytable.h             libbasardebug.h
+libbasarappl_eventmacros.h                           libbasarcmnutil_icredentialptr.h                     libbasardbaspect_accessorpropertytable_yiterator.h   libbasardebug_functions.h
+libbasarappl_functions.h                             libbasarcmnutil_iremotetaskcallback.h                libbasardbaspect_connectionref.h                     libbasarlogin.h
+libbasarappl_syseventexecuter.hpp                    libbasarcmnutil_iremotetaskcallbackptr.h             libbasardbaspect_definitions.h                       libbasarlogin_definitions.h
+libbasarappl_systemeventmanager.h                    libbasarcmnutil_iremotetaskptr.h                     libbasardbaspect_exceptions.h                        libbasarlogin_exceptions.h
+libbasarcmnutil.h                                    libbasarcmnutil_iremotetaskresultptr.h               libbasardbaspect_functions.h                         libbasarlogin_functions.h
+libbasarcmnutil_attachment.h                         libbasarcmnutil_locale.h                             libbasardbaspect_iaccessor.h                         libbasarlogin_manager.h
+libbasarcmnutil_bstring.h                            libbasarcmnutil_logging.h                            libbasardbaspect_logmacros.h                         libbasarproperty.h
+libbasarcmnutil_cmdline.h                            libbasarcmnutil_parameterlist.h                      libbasardbaspect_macros.h                            libbasarproperty_algorithm.h
+libbasarcmnutil_codec.h                              libbasarcmnutil_pattern.h                            libbasardbaspect_manager.h                           libbasarproperty_definitions.h
+libbasarcmnutil_config.h                             libbasarcmnutil_pipedprocess.h                       libbasardbaspect_sqlstringbuilder.h                  libbasarproperty_exceptions.h
+libbasarcmnutil_credentialbase.h                     libbasarcmnutil_print.h                              libbasardbaspect_stringbuildertypeindexes.h          libbasarproperty_functions.h
+libbasarcmnutil_credentialbaseptr.h                  libbasarcmnutil_remote.h                             libbasardbsql.h                                      libbasarproperty_propertydescription.h
+libbasarcmnutil_credentialsref.h                     libbasarcmnutil_remoteendpoint.h                     libbasardbsql_api.h                                  libbasarproperty_propertydescriptionlist_iterator.h
+libbasarcmnutil_date.h                               libbasarcmnutil_remotetaskexceptions.h               libbasardbsql_connectionlist_iterator.h              libbasarproperty_propertydescriptionlistref.h
+libbasarcmnutil_datetime.h                           libbasarcmnutil_remotetaskref.h                      libbasardbsql_connectionref.h                        libbasarproperty_propertystate.h
+libbasarcmnutil_datetimeexception.h                  libbasarcmnutil_remotetaskresultref.h                libbasardbsql_databaseinfo.h                         libbasarproperty_propertystateset.h
+libbasarcmnutil_datetimetools.h                      libbasarcmnutil_remotetasksubmitter.h                libbasardbsql_definitions.h                          libbasarproperty_propertytable_xiterator.h
+libbasarcmnutil_datetypes_common.h                   libbasarcmnutil_remotetasksubmitterbase.h            libbasardbsql_exceptions.h                           libbasarproperty_propertytable_yiterator.h
+libbasarcmnutil_decimal.h                            libbasarcmnutil_socket.h                             libbasardbsql_functions.h                            libbasarproperty_propertytableref.h
+libbasarcmnutil_definitions.h                        libbasarcmnutil_sshsessionptr.h                      libbasardbsql_insertsetref.h                         libbasarproperty_propertytablesnapshotref.h
+libbasarcmnutil_email.h                              libbasarcmnutil_timespan.h                           libbasardbsql_manager.h                              libbasarproperty_propertytype.h
+libbasarcmnutil_exceptions.h                         libbasarcmnutil_userpasscredential.h                 libbasardbsql_managerimpl.h                          libbasarproperty_saveaccessiterator.hpp
+libbasarcmnutil_functions.h                          libbasardbaspect.h                                   libbasardbsql_preparedstatementref.h                 libbasarproperty_supportedstate.h
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/include # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library # cd lib
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib # ls -la
+total 16
+drwxrwx---    4 h.benabd phoenix         256 Nov 23 10:29 .
+drwxrwx---    4 h.benabd phoenix         256 Nov 23 10:29 ..
+drwxrwx---    2 h.benabd phoenix        4096 Nov 23 10:29 debug
+drwxrwx---    2 h.benabd phoenix        4096 Nov 23 10:30 release
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib # cd debug
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib/debug # ls -la
+total 138880
+drwxrwx---    2 h.benabd phoenix        4096 Nov 23 10:29 .
+drwxrwx---    4 h.benabd phoenix         256 Nov 23 10:29 ..
+-rwxrwx---    1 h.benabd phoenix      924632 Nov 23 18:47 libbasarappl.so
+-rwxrwx---    1 h.benabd phoenix    17071582 Nov 23 18:47 libbasarcmnutil.so
+-rwxrwx---    1 h.benabd phoenix    16690393 Nov 23 18:47 libbasardbaspect.so
+-rwxrwx---    1 h.benabd phoenix     9994520 Nov 23 18:47 libbasardbsql.so
+-rwxrwx---    1 h.benabd phoenix       37447 Nov 23 18:46 libbasardebug.so
+-rwxrwx---    1 h.benabd phoenix    17840542 Nov 23 18:47 libbasarlogin.so
+-rwxrwx---    1 h.benabd phoenix     2575999 Nov 23 18:47 libbasarprinting.so
+-rwxrwx---    1 h.benabd phoenix     5933866 Nov 23 18:47 libbasarproperty.so
+-rwxrwx---    1 h.benabd phoenix       19883 Nov 23 18:46 libopensslwrap.so
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/library/lib/debug #

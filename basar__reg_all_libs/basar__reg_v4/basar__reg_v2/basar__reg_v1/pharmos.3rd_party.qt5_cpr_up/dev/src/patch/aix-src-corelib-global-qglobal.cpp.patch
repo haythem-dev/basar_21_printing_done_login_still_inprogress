@@ -1,0 +1,31 @@
+# Fix for Qt namespace issues on AIX - avoid macro redefinition
+--- src/corelib/global/qglobal.cpp.orig
++++ src/corelib/global/qglobal.cpp
+@@ -108,0 +109,8 @@
++
++#ifdef _AIX
++// Ensure proper symbol visibility on AIX
++#ifndef Q_DECL_EXPORT
++#define Q_DECL_EXPORT __attribute__((visibility("default")))
++#endif
++#endif
++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

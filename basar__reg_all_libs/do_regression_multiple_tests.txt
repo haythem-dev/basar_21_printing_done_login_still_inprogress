@@ -1,0 +1,538 @@
+
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ./do*
+Cleaning old test outputs...
+=========================================
+  Basar Regression Test Suite
+=========================================
+
+Regression directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression
+Start time: Sun Dec  7 21:15:11 CET 2025
+
+=========================================
+Test 1: libbasarcmnutil/date_operations
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasarcmnutil/date_operations/go.out[ for patterns from ]basar/regression/libbasarcmnutil/date_operations/patterns.txt[
+Pattern 'Basar Date Operations Test' found.
+Pattern 'Test 1: Date Creation' found.
+Pattern 'Created date: 2024-04-22' NOT found.
+Pattern 'Year: 2024' found.
+Pattern 'Month: 4' found.
+Pattern 'Day: 22' found.
+Pattern 'Test 2: Date Arithmetic' found.
+Pattern 'After adding 10 days: 2024-05-02' NOT found.
+Pattern 'Test 3: Calculate Days Between Dates' found.
+Pattern 'Days from date1 to date2: 10' NOT found.
+Pattern 'Test 4: Date Validation' found.
+Pattern '2024-02-29 is valid: yes' found.
+Pattern '2023-02-29 is valid: no' NOT found.
+Pattern 'Test 5: Current Date' found.
+Pattern 'Today is valid: yes' found.
+Pattern 'All date operations completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasarcmnutil.so' found.
+==> 15 out of 19 patterns found. Success rate: 78%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o date_operations main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+  ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+  Build successful - binary created
+
+  =========================================
+    Checking linked libraries
+  =========================================
+         ../../../library/lib/debug/libbasarcmnutil.so
+
+=========================================
+Test 2: libbasarcmnutil/decimal_arithmetic
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasarcmnutil/decimal_arithmetic/go.out[ for patterns from ]basar/regression/libbasarcmnutil/decimal_arithmetic/patterns.txt[
+Pattern 'Basar Decimal Arithmetic Test' found.
+Pattern 'Test 1: Decimal Creation' found.
+Pattern 'Decimal from string '123.45': 123.45' NOT found.
+Pattern 'Test 2: Decimal Addition' found.
+Pattern '123.45 + 67.89 = 191.34' NOT found.
+Pattern 'Test 3: Decimal Subtraction' found.
+Pattern '123.45 - 67.89 = 55.56' NOT found.
+Pattern 'Test 4: Decimal Multiplication' found.
+Pattern 'Test 5: Decimal Comparison' found.
+Pattern '100.00 < 200.00: true' found.
+Pattern '200.00 > 100.00: true' found.
+Pattern 'Test 6: Decimal Precision' found.
+Pattern 'All decimal operations completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasarcmnutil.so' found.
+==> 13 out of 16 patterns found. Success rate: 81%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o decimal_arithmetic main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+  ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+  Build successful - binary created
+
+  =========================================
+    Checking linked libraries
+  =========================================
+         ../../../library/lib/debug/libbasarcmnutil.so
+
+=========================================
+Test 3: libbasarcmnutil/hello_basar
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasarcmnutil/hello_basar/go.out[ for patterns from ]basar/regression/libbasarcmnutil/hello_basar/patterns.txt[
+Pattern 'Hello from Basar!' found.
+Pattern 'Version:' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasarcmnutil.so' found.
+==> 6 out of 6 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 4: libbasardbaspect/accessor_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/accessor_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/accessor_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/accessor_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/accessor_test/patterns.txt[
+Pattern 'Basar Regression Test: accessor_test' NOT found.
+Pattern 'Test 1: Accessor Interface' NOT found.
+Pattern 'Accessor interface verified' NOT found.
+Pattern 'Test 2: Accessor Definition' NOT found.
+Pattern 'Accessor definition list available' NOT found.
+Pattern 'Test 3: Accessor Instance' NOT found.
+Pattern 'Accessor instance management verified' NOT found.
+Pattern 'Test 4: Accessor Execute' NOT found.
+Pattern 'Accessor execute mechanism available' NOT found.
+Pattern 'Test 5: Accessor Listener' NOT found.
+Pattern 'Accessor execute listener validated' NOT found.
+Pattern 'Test completed successfully' NOT found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 3 out of 15 patterns found. Success rate: 20%
+✗ FAILED
+
+First 10 lines of test output:
+  =========================================
+    Building accessor_test
+  =========================================
+
+
+  Build successful - binary created
+
+  =========================================
+    Checking linked libraries
+  =========================================
+
+=========================================
+Test 5: libbasardbaspect/caching_policy_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/caching_policy_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/caching_policy_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/caching_policy_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/caching_policy_test/patterns.txt[
+Pattern 'Basar Regression Test: caching_policy_test' found.
+Pattern 'Test 1: Caching Policy Base' found.
+Pattern 'Caching policy base class verified' found.
+Pattern 'Test 2: Full Caching' found.
+Pattern 'Full caching policy available' found.
+Pattern 'Test 3: No Caching' found.
+Pattern 'No caching policy available' found.
+Pattern 'Test 4: On Demand Caching' found.
+Pattern 'On demand caching policy available' found.
+Pattern 'Test 5: Single Row Caching' found.
+Pattern 'Single row caching policy available' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 6: libbasardbaspect/connection_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/connection_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/connection_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/connection_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/connection_test/patterns.txt[
+Pattern 'Basar Regression Test: connection_test' found.
+Pattern 'Test 1: Connection Header' found.
+Pattern 'Connection header included successfully' found.
+Pattern 'Test 2: Connection Structure' found.
+Pattern 'Connection structure verified' found.
+Pattern 'Test 3: Connection Reference' found.
+Pattern 'Connection reference type available' found.
+Pattern 'Test 4: Connection Pool' found.
+Pattern 'Connection pool mechanism verified' found.
+Pattern 'Test 5: Connection Lifecycle' found.
+Pattern 'Connection lifecycle management validated' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 7: libbasardbaspect/manager_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/manager_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/manager_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/manager_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/manager_test/patterns.txt[
+Pattern 'Basar Regression Test: manager_test' found.
+Pattern 'Test 1: Manager Interface' found.
+Pattern 'Database aspect manager interface verified' found.
+Pattern 'Test 2: Manager Implementation' found.
+Pattern 'Manager implementation available' found.
+Pattern 'Test 3: Accessor Management' found.
+Pattern 'Accessor management through manager verified' found.
+Pattern 'Test 4: Connection Management' found.
+Pattern 'Connection management through manager verified' found.
+Pattern 'Test 5: Cache Controller' found.
+Pattern 'Cache controller management verified' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 8: libbasardbaspect/sql_builder_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/sql_builder_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/sql_builder_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/sql_builder_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/sql_builder_test/patterns.txt[
+Pattern 'Basar Regression Test: sql_builder_test' found.
+Pattern 'Test 1: SQL String Builder Interface' found.
+Pattern 'SQL string builder interface verified' found.
+Pattern 'Test 2: Prepared Statement Builder' found.
+Pattern 'Prepared statement builder available' found.
+Pattern 'Test 3: Builder Type Indexes' found.
+Pattern 'Builder type indexes defined' found.
+Pattern 'Test 4: Builder List' found.
+Pattern 'SQL string builder list available' found.
+Pattern 'Test 5: Builder Reference' found.
+Pattern 'SQL string builder reference validated' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 9: libbasardbsql/connection_basic
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/connection_basic/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/connection_basic
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbsql/connection_basic/go.out[ for patterns from ]basar/regression/libbasardbsql/connection_basic/patterns.txt[
+Pattern '' found.
+Pattern 'Basar Regression Test: connection_basic' found.
+Pattern 'DatabaseInfo object created successfully' found.
+Pattern 'libbasardbsql version:' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbsql.so' found.
+==> 8 out of 8 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 10: libbasardbsql/database_info_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/database_info_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/database_info_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbsql/database_info_test/go.out[ for patterns from ]basar/regression/libbasardbsql/database_info_test/patterns.txt[
+Pattern '' found.
+Pattern 'Basar Regression Test: database_info_test' found.
+Pattern 'Test 1: Default DatabaseInfo' found.
+Pattern 'Created empty DatabaseInfo object' found.
+Pattern 'Test 2: ODBC Configuration' found.
+Pattern 'ODBC DSN set successfully' found.
+Pattern 'Test 3: Informix Configuration' found.
+Pattern 'Informix configuration set successfully' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+==> 11 out of 11 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 11: libbasardbsql/exception_handling
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/exception_handling/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/exception_handling
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbsql/exception_handling/go.out[ for patterns from ]basar/regression/libbasardbsql/exception_handling/patterns.txt[
+Pattern '' found.
+Pattern 'Basar Regression Test: exception_handling' found.
+Pattern 'Test 1: DbException construction' found.
+Pattern 'DbException caught successfully' found.
+Pattern 'Test 2: Exception hierarchy' found.
+Pattern 'Exception caught as base class' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+==> 9 out of 9 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  11
+Passed:       8
+Failed:       3
+
+End time: Sun Dec  7 21:15:57 CET 2025
+
+FAILURE: 3 of 11 tests failed ✗
+
+See /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/regression.summary for details
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ls
+check_dependencies.sh   do_regression.sh        libbasardbaspect        new_test.sh             regression.summary
+check_patterns.sh       libbasarcmnutil         libbasardbsql           new_test_aix.sh         run_standalone_only.sh
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # cd libbasarcmnutil
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil # ls
+date_operations     decimal_arithmetic  hello_basar
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil # cd decimal_arithmetic
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic # ./go.sh
+=========================================
+  Building decimal_arithmetic
+=========================================
+
+rm -f decimal_arithmetic *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o decimal_arithmetic main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+Build successful - binary created
+
+=========================================
+  Checking linked libraries
+=========================================
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+
+=========================================
+  Running test
+=========================================
+
+Basar Decimal Arithmetic Test
+Test 1: Decimal Creation
+Decimal from string '123.45': 12345,0
+Test 2: Decimal Addition
+123.45 + 67.89 = 19134,0
+Test 3: Decimal Subtraction
+123.45 - 67.89 = 5556,0
+Test 4: Decimal Multiplication
+123.45 * 67.89 = 83810205,0
+Test 5: Decimal Comparison
+100.00 < 200.00: true
+200.00 > 100.00: true
+Test 6: Decimal Precision
+Precise value: 123456789,0
+All decimal operations completed successfully
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil # ls
+date_operations     decimal_arithmetic  hello_basar
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil # cd  date_operations
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations # ./go.sh
+=========================================
+  Building date_operations
+=========================================
+
+rm -f date_operations *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o date_operations main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+Build successful - binary created
+
+=========================================
+  Checking linked libraries
+=========================================
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+         ../../../../../ext/openssl/lib/libssl.so
+         ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+         ../../../../../ext/zlib/lib/debug/libz.so
+
+=========================================
+  Running test
+=========================================
+
+Basar Date Operations Test
+Test 1: Date Creation
+Created date:
+Year: 2024
+Month: 4
+Day: 22
+Test 2: Date Arithmetic
+After adding 10 days:
+Test 3: Calculate Days Between Dates
+Days from date1 to date2: -20
+Test 4: Date Validation
+2024-02-29 is valid: yes
+2023-02-29 is valid: yes
+Test 5: Current Date
+Today is valid: yes
+All date operations completed successfully
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil # cd ..
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ls
+check_dependencies.sh   do_regression.sh        libbasardbaspect        new_test.sh             regression.summary
+check_patterns.sh       libbasarcmnutil         libbasardbsql           new_test_aix.sh         run_standalone_only.sh
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # cd libbasardbaspect
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect # ls
+accessor_test        caching_policy_test  connection_test      manager_test         sql_builder_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect # cd accessor_test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/accessor_test # ./go.sh
+Using INFORMIXDIR: /informix/informix11.70FC5
+=========================================
+  Building accessor_test
+=========================================
+
+
+Build successful - binary created
+
+=========================================
+  Checking linked libraries
+=========================================
+accessor_test needs:
+         ../../../library/lib/debug/libbasardbaspect.so
+         ../../../library/lib/debug/libbasarproperty.so
+         ../../../library/lib/debug/libbasardbsql.so
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+         ../../../../../ext/boost/lib/libboost_system.so
+         ../../../../../ext/boost/lib/libboost_filesystem.so
+         /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libstdc++.a(libstdc++.so.6)
+         /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libgcc_s.a(shr.o)
+         /usr/lib/libpthreads.a(shr_xpg5_64.o)
+         /usr/lib/libc.a(shr_64.o)
+         /usr/lib/libpthread.a(shr_xpg5_64.o)
+         /informix/informix11.70FC5/lib/esql/libifgen.so
+         /informix/informix11.70FC5/lib/esql/libifos.so
+         /informix/informix11.70FC5/lib/esql/libifsql.so
+         /informix/informix11.70FC5/lib/esql/libifgls.so
+         /informix/informix11.70FC5/lib/libifasf.so
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBml.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libbmlApi.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlCh.a
+         ../../../../../ext/boost/lib/libboost_regex.so
+         ../../../library/lib/debug/libopensslwrap.so
+         ../../../../../ext/libssh2/lib/debug/libssh2.so
+         ../../../../../ext/ghostscript/lib/libgs.so
+         /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/../../../libiconv.a(libiconv.so.2)
+         /unix
+         /usr/lib/libcrypt.a(shr_64.o)
+         /usr/lib/libc_r.a(shr_64.o)
+         /usr/lib/libtli_r.a(shr_64.o)
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libSpecMap.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlUtils.a
+         /usr/lib/libdl.a(shr_64.o)
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libComHd.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libChTcpIp.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libChTN3270.a
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libssl.so
+         ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+         ../../../../../ext/zlib/lib/debug/libz.so
+         ../../../../../ext/openssl/lib/libcrypto.a(libcrypto64.so.1.1)
+         /usr/lib/libXt.a(shr_64.o)
+         /usr/lib/libX11.a(shr_64.o)
+         /usr/lib/libc.a(pse_64.o)
+         /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libcrypto.so
+         /usr/lib/libSM.a(shr_64.o)
+         /usr/lib/libICE.a(shr_64.o)
+         /usr/lib/libXi.a(shr_64.o)
+         /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/../../../libiconv.a(shr4_64.o)
+         /usr/lib/libIM.a(shr_64.o)
+         /usr/lib/libXext.a(shr_64.o)
+         /usr/lib/libgaimisc.a(shr_64.o)
+         /usr/lib/libgair4.a(shr_64.o)
+         /usr/lib/libodm.a(shr_64.o)
+
+=========================================
+  Running test
+=========================================
+
+=========================================
+  Accessor Test - libbasardbaspect
+=========================================
+
+Test 1: Creating accessor instance...
+  - Library loaded successfully
+  - Basic types accessible
+
+=========================================
+  All tests passed
+=========================================
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/accessor_test #

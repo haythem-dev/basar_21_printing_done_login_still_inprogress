@@ -1,0 +1,15 @@
+Basar Regression Test: column_operations_test
+Test 1: Column Name Creation
+Column name creation verified
+Test 2: Column Index Operations
+Column index operations verified
+Test 3: Column Type Assignment
+Column type assignment verified
+Test 4: Column Name Comparison
+Column name comparison verified
+Test 5: Column Collection Operations
+Column collection operations verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarproperty.so

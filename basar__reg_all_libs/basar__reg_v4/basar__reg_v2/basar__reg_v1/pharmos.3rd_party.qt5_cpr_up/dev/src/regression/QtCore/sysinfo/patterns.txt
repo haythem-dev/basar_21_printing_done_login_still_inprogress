@@ -1,0 +1,8 @@
+Machine host name:
+Machine unique id:
+power64
+big_endian
+Kernel Type: "aix"
+Operating system: "AIX
+CPU Architecture:
+System information:

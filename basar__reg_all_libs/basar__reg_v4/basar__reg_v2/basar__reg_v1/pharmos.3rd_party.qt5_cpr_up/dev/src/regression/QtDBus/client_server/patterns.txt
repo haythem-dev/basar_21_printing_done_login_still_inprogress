@@ -1,0 +1,7 @@
+pkg-install/lib/libQt5DBus.so
+pkg-install/lib/libQt5Core.so
+Usage: ./client_server \[options\]
+\--server    Run as D-Bus server
+\--client    Run as D-Bus client
+Failed to register service: "Not connected to D-Bus server"
+Failed to connect to service: "Not connected to D-Bus server"

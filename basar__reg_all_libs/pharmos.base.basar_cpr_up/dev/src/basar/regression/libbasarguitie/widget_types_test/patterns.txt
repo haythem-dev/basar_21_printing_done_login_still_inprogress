@@ -1,0 +1,15 @@
+Basar Regression Test: guitie_widget_types_test
+Test 1: Widget Type Enumeration
+Widget type enumeration verified
+Test 2: Basar Custom Widgets
+Basar custom widgets verified
+Test 3: Widget Type Index Lookup
+Widget type index lookup verified
+Test 4: Widget Policy Flags
+Widget policy flags verified
+Test 5: Unknown Widget Handling
+Unknown widget handling verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarguitie.so

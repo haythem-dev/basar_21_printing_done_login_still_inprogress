@@ -1,0 +1,51 @@
+test_basar needs
+test mode : running long
+test suite: running all
+BASAR_String_Tests/VarString_Basic_Operations: Start
+BASAR_String_Tests/VarString_Upper_Lower: Start
+BASAR_String_Tests/VarString_Find_Operations: Start
+BASAR_String_Tests/VarString_SubString: Start
+BASAR_String_Tests/VarString_Left_Right: Start
+BASAR_String_Tests/VarString_Format: Start
+BASAR_String_Tests/VarString_Empty: Start
+BASAR_String_Tests/ConstString_Operations: Start
+BASAR_Exception_Tests/Exception_Basic: Start
+BASAR_Exception_Tests/RuntimeException_Basic: Start
+BASAR_Exception_Tests/Exception_With_StackTrace: Start
+BASAR_Utility_Tests/GetExecDir: Start
+BASAR_Utility_Tests/GetLibDir: Start
+BASAR_Utility_Tests/GetExecPath: Start
+BASAR_Utility_Tests/Version_Information: Start
+BASAR_I18n_Tests/I18nString_Basic: Start
+BASAR_I18n_Tests/I18nString_Conversion: Start
+BASAR_I18n_Tests/I18nString_Empty: Start
+BASAR_Memory_Tests/Debug_LeakCheck_Enabled: Start
+BASAR_Integration_Tests/String_And_Exception_Integration: Start
+BASAR_Integration_Tests/Multiple_String_Operations: Start
+BASAR_Integration_Tests/Exception_Handling_Chain: Start
+BASAR_String_Tests/VarString_Basic_Operations: Finished
+BASAR_String_Tests/VarString_Upper_Lower: Finished
+BASAR_String_Tests/VarString_Find_Operations: Finished
+BASAR_String_Tests/VarString_SubString: Finished
+BASAR_String_Tests/VarString_Left_Right: Finished
+BASAR_String_Tests/VarString_Format: Finished
+BASAR_String_Tests/VarString_Empty: Finished
+BASAR_String_Tests/ConstString_Operations: Finished
+BASAR_Exception_Tests/Exception_Basic: Finished
+BASAR_Exception_Tests/RuntimeException_Basic: Finished
+BASAR_Exception_Tests/Exception_With_StackTrace: Finished
+BASAR_Utility_Tests/GetExecDir: Finished
+BASAR_Utility_Tests/GetLibDir: Finished
+BASAR_Utility_Tests/GetExecPath: Finished
+BASAR_Utility_Tests/Version_Information: Finished
+BASAR_I18n_Tests/I18nString_Basic: Finished
+BASAR_I18n_Tests/I18nString_Conversion: Finished
+BASAR_I18n_Tests/I18nString_Empty: Finished
+BASAR_Memory_Tests/Debug_LeakCheck_Enabled: Finished
+BASAR_Integration_Tests/String_And_Exception_Integration: Finished
+BASAR_Integration_Tests/Multiple_String_Operations: Finished
+BASAR_Integration_Tests/Exception_Handling_Chain: Finished
+STATUS  : SUCCESS
+RESULT  : All tests passed
+FAILURES: 0
+Test suite completed

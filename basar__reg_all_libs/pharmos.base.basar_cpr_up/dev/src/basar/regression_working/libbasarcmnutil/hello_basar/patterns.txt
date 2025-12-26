@@ -1,0 +1,6 @@
+Hello from Basar!
+Version:
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

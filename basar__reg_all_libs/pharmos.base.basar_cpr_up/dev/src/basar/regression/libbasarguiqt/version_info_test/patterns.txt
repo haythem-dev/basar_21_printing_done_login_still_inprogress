@@ -1,0 +1,20 @@
+Basar Regression Test: version_info_test
+Test 1: Version String Retrieval
+Library version:
+Version string retrieved successfully
+Test 2: Full Version Information
+Full version:
+Full version string retrieved successfully
+Test 3: Version Validity Check
+Version pointers are valid
+Version validity check passed
+Test 4: Version String Content
+Version string is non-empty
+Version content validated
+Test 5: Version Consistency
+Multiple version calls return consistent results
+Version consistency verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarguiqt.so

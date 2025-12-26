@@ -1,0 +1,15 @@
+Basar Regression Test: caching_policy_test
+Test 1: Caching Policy Base
+Caching policy base class verified
+Test 2: Full Caching
+Full caching policy available
+Test 3: No Caching
+No caching policy available
+Test 4: On Demand Caching
+On demand caching policy available
+Test 5: Single Row Caching
+Single row caching policy available
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasardbaspect.so

@@ -1,0 +1,95 @@
+=========================================
+  Building caching_policy_test
+=========================================
+
+
+Build successful - binary created
+
+=========================================
+  Checking linked libraries
+=========================================
+caching_policy_test needs:
+	 ../../../library/lib/debug/libbasardbaspect.so
+	 ../../../library/lib/debug/libbasarproperty.so
+	 ../../../library/lib/debug/libbasardbsql.so
+	 ../../../library/lib/debug/libbasarcmnutil.so
+	 ../../../library/lib/debug/libbasardebug.so
+	 ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+	 ../../../../../ext/boost/lib/libboost_system.so
+	 ../../../../../ext/boost/lib/libboost_filesystem.so
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libstdc++.a(libstdc++.so.6)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libgcc_s.a(shr.o)
+	 /usr/lib/libpthreads.a(shr_xpg5_64.o)
+	 /usr/lib/libc.a(shr_64.o)
+	 /usr/lib/libpthread.a(shr_xpg5_64.o)
+	 /informix/informix11.70FC5/lib/esql/libifgen.so
+	 /informix/informix11.70FC5/lib/esql/libifos.so
+	 /informix/informix11.70FC5/lib/esql/libifsql.so
+	 /informix/informix11.70FC5/lib/esql/libifgls.so
+	 /informix/informix11.70FC5/lib/libifasf.so
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBml.a
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libbmlApi.a
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlCh.a
+	 ../../../../../ext/boost/lib/libboost_regex.so
+	 ../../../library/lib/debug/libopensslwrap.so
+	 ../../../../../ext/libssh2/lib/debug/libssh2.so
+	 ../../../../../ext/ghostscript/lib/libgs.so
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/../../../libiconv.a(libiconv.so.2)
+	 /unix
+	 /usr/lib/libcrypt.a(shr_64.o)
+	 /usr/lib/libc_r.a(shr_64.o)
+	 /usr/lib/libtli_r.a(shr_64.o)
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libSpecMap.a
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libBmlUtils.a
+	 /usr/lib/libdl.a(shr_64.o)
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libComHd.a
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libChTcpIp.a
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libChTN3270.a
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libssl.so
+	 ../../../../../ext/openssl/lib/libssl.a(libssl64.so.1.1)
+	 ../../../../../ext/zlib/lib/debug/libz.so
+	 ../../../../../ext/openssl/lib/libcrypto.a(libcrypto64.so.1.1)
+	 /usr/lib/libXt.a(shr_64.o)
+	 /usr/lib/libX11.a(shr_64.o)
+	 /usr/lib/libc.a(pse_64.o)
+	 /software/ae/marathon/lib/tcaccess/8.0.20.1/lib/libcrypto.so
+	 /usr/lib/libSM.a(shr_64.o)
+	 /usr/lib/libICE.a(shr_64.o)
+	 /usr/lib/libXi.a(shr_64.o)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/../../../libiconv.a(shr4_64.o)
+	 /usr/lib/libIM.a(shr_64.o)
+	 /usr/lib/libXext.a(shr_64.o)
+	 /usr/lib/libgaimisc.a(shr_64.o)
+	 /usr/lib/libgair4.a(shr_64.o)
+	 /usr/lib/libodm.a(shr_64.o)
+
+=========================================
+  Running test
+=========================================
+
+=========================================
+  Basar Regression Test: caching_policy_test
+=========================================
+
+Test 1: Caching Policy Base
+  Caching policy base class verified
+
+Test 2: Full Caching
+  Full caching policy available
+
+Test 3: No Caching
+  No caching policy available
+
+Test 4: On Demand Caching
+  On demand caching policy available
+
+Test 5: Single Row Caching
+  Single row caching policy available
+
+=========================================
+  Test completed successfully
+=========================================
+
+=========================================
+  Test exit code: 0
+=========================================

@@ -1,0 +1,9 @@
+pkg-install/lib/libQt5Core.so
+Plain text extracted and ODF created.
+xml version=
+encoding="UTF-8"
+xmlns:office
+xmlns:text
+office:body
+office:text
+office:document-content

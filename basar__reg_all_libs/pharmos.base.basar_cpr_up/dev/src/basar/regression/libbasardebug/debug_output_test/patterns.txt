@@ -1,0 +1,15 @@
+Basar Regression Test: debug_output_test
+Test 1: Simple Debug Output
+Simple message output verified
+Test 2: Formatted Debug Output
+Formatted message output verified
+Test 3: Multiple Line Output
+Multiple lines output verified
+Test 4: Special Characters
+Special characters handled
+Test 5: Empty String
+Empty string handled
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasardebug.so

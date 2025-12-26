@@ -1,0 +1,45 @@
+g++ -g -std=c++17 -maix64 -pthread -o threading_test main.cpp -maix64 -pthread
+
+Build successful - binary created
+
+=========================================
+  Linked libraries
+=========================================
+threading_test needs:
+	 /usr/lib/libc.a(shr_64.o)
+	 /usr/lib/libpthreads.a(shr_xpg5_64.o)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libstdc++.a(libstdc++.so.6)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libgcc_s.a(shr.o)
+	 /unix
+	 /usr/lib/libcrypt.a(shr_64.o)
+
+=========================================
+  Basar Regression Test: threading_test
+=========================================
+
+Test 1: Thread Creation
+  Thread created and executed
+  Thread joined successfully
+
+Test 2: Multiple Threads
+  Thread 0 completed 1000 increments
+  Thread 1 completed 1000 increments
+  Thread 2 completed 1000 increments
+  Thread 3 completed 1000 increments
+  All threads completed
+  Final counter value: 4000
+
+Test 3: Mutex Synchronization
+  Mutex lock acquired and released
+
+Test 4: Atomic Operations
+  Atomic fetch_add result: 10
+
+Test 5: Thread Safety
+  Thread-safe counter verification: passed
+
+=========================================
+  Test completed successfully
+=========================================
+
+Test execution completed with exit code 0

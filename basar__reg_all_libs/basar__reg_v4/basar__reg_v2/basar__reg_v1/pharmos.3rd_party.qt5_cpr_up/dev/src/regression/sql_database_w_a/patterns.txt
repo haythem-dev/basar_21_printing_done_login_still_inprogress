@@ -1,0 +1,9 @@
+pkg-install/lib/libQt5Core.so
+pkg-install/lib/libQt5Sql.so
+Starting SQL Database Test
+Database opened successfully
+Table created successfully
+Query executed successfully
+Users in database:
+Prepared statement executed successfully
+Test completed successfully

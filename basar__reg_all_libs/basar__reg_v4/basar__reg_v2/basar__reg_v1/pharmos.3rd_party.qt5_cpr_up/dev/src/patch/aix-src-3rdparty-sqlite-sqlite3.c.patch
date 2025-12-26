@@ -1,0 +1,9 @@
+# Disable use of posix_fallocate in bundled sqlite on AIX
+--- src/3rdparty/sqlite/sqlite3.c
++++ src/3rdparty/sqlite/sqlite3.c
+@@ -38142,1 +38142,1 @@
+-#if defined(HAVE_POSIX_FALLOCATE) && HAVE_POSIX_FALLOCATE
++#ifndef _AIX //#if defined(HAVE_POSIX_FALLOCATE) && HAVE_POSIX_FALLOCATE
+
+
+

@@ -1,0 +1,15 @@
+Basar Regression Test: leak_check_test
+Test 1: Enable Leak Check
+Leak check enabled
+Test 2: Disable Leak Check
+Leak check disabled
+Test 3: Ignore Memory Diff
+Memory diff ignored: 10 blocks, 1024 bytes
+Test 4: Print Debug Message
+Debug message printed
+Test 5: Build Server Check
+Is build server:
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasardebug.so

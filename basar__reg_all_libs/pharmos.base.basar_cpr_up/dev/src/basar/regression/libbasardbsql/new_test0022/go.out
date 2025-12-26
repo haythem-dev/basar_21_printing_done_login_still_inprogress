@@ -1,0 +1,8 @@
+g++ -g -std=c++17 -maix64 -pthread -I../../../.. -I../../../../../ext/log4cplus/include -o new_test0022 main.cpp -L../../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+main.cpp:1:10: fatal error: libbasarcmnutil/libbasarcmnutil.h: No such file or directory
+    1 | #include "libbasarcmnutil/libbasarcmnutil.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [makefile:33: new_test0022] Error 1
+
+ERROR: Build failed - executable not created

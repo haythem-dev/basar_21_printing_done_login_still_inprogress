@@ -1,0 +1,6 @@
+QVariant(QString, "Forty-two")
+QVariant(QString, "Eleven")
+QVariant(QString, "Seven")
+QVariant(int, 42)
+QVariant(int, 11)
+QVariant(int, 7)

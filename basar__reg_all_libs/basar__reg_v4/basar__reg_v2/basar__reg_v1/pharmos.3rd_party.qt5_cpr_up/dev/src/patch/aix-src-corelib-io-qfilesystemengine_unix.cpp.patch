@@ -1,0 +1,36 @@
+# Fix AIX timespec structure compatibility issues
+--- src/corelib/io/qfilesystemengine_unix.cpp
++++ src/corelib/io/qfilesystemengine_unix.cpp
+@@ -196,0 +197,11 @@
++#ifdef _AIX
++qint64 timespecToMSecs(const st_timespec_t &spec)
++{
++    return qint64(spec.tv_sec) * 1000 + spec.tv_nsec / 1000000;
++}
++
++qint64 atime(const QT_STATBUF &statBuffer, ulong) { return timespecToMSecs(statBuffer.st_atim); }
++qint64 birthtime(const QT_STATBUF &, ulong) { return Q_INT64_C(0); }
++qint64 ctime(const QT_STATBUF &statBuffer, ulong) { return timespecToMSecs(statBuffer.st_ctim); }
++qint64 mtime(const QT_STATBUF &statBuffer, ulong) { return timespecToMSecs(statBuffer.st_mtim); }
++#else // NOT _AIX
+@@ -308,0 +321,1 @@
++#endif // NOT _AIX
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

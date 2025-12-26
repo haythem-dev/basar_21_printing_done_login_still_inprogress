@@ -1,0 +1,8 @@
+\--check-build-system CMakeFiles/Makefile.cmake
+\-std=gnu++11
+pkg-install/./mkspecs/aix-g++-64
+Serialized JSON
+Parsed JSON object:
+Name: "Alice"
+Age: 30
+Is student: false

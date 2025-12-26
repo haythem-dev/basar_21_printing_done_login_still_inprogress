@@ -1,0 +1,15 @@
+Basar Regression Test: event_macros_test
+Test 1: Macro Definitions
+Event macros defined successfully
+Test 2: Macro Expansion
+Macro expansion verified
+Test 3: Event Type Macros
+Event type macros available
+Test 4: Handler Macros
+Handler macros validated
+Test 5: Preprocessor Compatibility
+Preprocessor compatibility for AIX 7.2 verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarappl.so

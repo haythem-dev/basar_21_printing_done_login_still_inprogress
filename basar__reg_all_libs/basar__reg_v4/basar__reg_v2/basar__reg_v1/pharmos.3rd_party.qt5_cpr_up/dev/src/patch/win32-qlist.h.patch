@@ -1,0 +1,12 @@
+--- a/src/corelib/tools/qlist.h	2019-12-18 07:56:02.625588200 +0100
++++ b/src/corelib/tools/qlist.h	2019-12-18 07:56:28.096046000 +0100
+@@ -981,7 +981,7 @@
+         Node *n = reinterpret_cast<Node *>(p.at(from + 1));
+         while (n-- != b) {
+             if (n->t() == t)
+-                return n - b;
++                return static_cast<int>(n - b);
+         }
+     }
+     return -1;
+

@@ -1,0 +1,5 @@
+43c43
+< #if !defined(Q_OS_OPENBSD)
+---
+> #if !defined(Q_OS_OPENBSD) && !defined(_AIX)
+

@@ -1,0 +1,46 @@
+g++ -g -std=c++17 -maix64 -pthread -o memory_test main.cpp -maix64 -pthread
+
+Build successful - binary created
+
+=========================================
+  Linked libraries
+=========================================
+memory_test needs:
+	 /usr/lib/libc.a(shr_64.o)
+	 /usr/lib/libpthreads.a(shr_xpg5_64.o)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libstdc++.a(libstdc++.so.6)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libgcc_s.a(shr.o)
+	 /unix
+	 /usr/lib/libcrypt.a(shr_64.o)
+
+=========================================
+  Basar Regression Test: memory_test
+=========================================
+
+Test 1: Smart Pointer Usage
+  unique_ptr created with value: 42
+  shared_ptr created with value: 100
+  shared_ptr use count: 1
+
+Test 2: Vector Memory Management
+  Vector reserved capacity: 1000
+  Vector size after push: 100
+
+Test 3: Memory Allocation
+  Raw array allocated
+  Raw array deallocated
+
+Test 4: RAII Pattern
+  Scoped resource created
+  Scoped resource automatically freed
+
+Test 5: Move Semantics
+  Source vector size: 5
+  Dest vector size after move: 5
+  Source vector size after move: 0
+
+=========================================
+  Test completed successfully
+=========================================
+
+Test execution completed with exit code 0

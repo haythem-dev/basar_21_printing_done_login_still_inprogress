@@ -1,0 +1,27 @@
+Qt HTTP Network Regression Test for AIX
+Platform:
+Qt Version:
+Build Date:
+Starting HTTP Network Test
+Qt Network module version:
+Test 1: HTTP GET request
+Test 2: HTTP POST request
+Test 3: HTTP PUT request
+HTTP GET request sent to
+HTTP POST request sent to
+HTTP PUT request sent to
+All HTTP tests initiated
+SSL support: disabled
+Test completion time:
+Testing DNS resolution:
+Progress:
+Resolving httpbin.org:
+Resolving jsonplaceholder.typicode.com:
+Resolving httpbingo.org:
+Testing HTTP connectivity:
+DNS Configuration:
+Network interface status:
+✓ Build completed successfully
+Checking DNS and network connectivity
+Running HTTP network test
+✓ Test completed successfully!

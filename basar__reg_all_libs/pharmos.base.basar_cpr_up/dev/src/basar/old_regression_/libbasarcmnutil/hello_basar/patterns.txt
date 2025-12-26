@@ -1,0 +1,20 @@
+Basar Regression Test: hello_basar
+Test 1: Library Load Verification
+Hello from Basar!
+Library loaded successfully
+Test 2: Version Information
+Version:
+Version retrieval verified
+Test 3: Date Object Creation
+Current date object created
+Date creation verified
+Test 4: Date String Conversion
+Today's date:
+Date to string conversion verified
+Test 5: Exception Handling Setup
+Exception handlers available
+Exception handling verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

@@ -1,0 +1,35 @@
+g++ -g -std=c++17 -maix64 -o cpp_basics main.cpp -maix64
+Build successful - binary created
+=========================================
+  Basar Regression Test: cpp_basics
+=========================================
+
+Test 1: String Operations
+  String value: Hello Basar
+  String length: 11
+  String operations verified
+
+Test 2: Vector Operations
+  Vector size: 5
+  Vector capacity: 5
+  Vector operations verified
+
+Test 3: Arithmetic Operations
+  Sum of elements: 15
+  Expected: 15, Got: 15
+  Arithmetic operations verified
+
+Test 4: Smart Pointer Operations
+  Smart pointer value: 42
+  Smart pointer not null: true
+  Smart pointer operations verified
+
+Test 5: Exception Handling Basics
+  Exception caught: Test exception
+  Exception handling verified
+
+=========================================
+  Test completed successfully
+=========================================
+Exit code: 0
+Test execution completed with exit code 0

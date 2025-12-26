@@ -1,0 +1,28 @@
+# Fix AIX platform definitions for truncate macro
+--- mkspecs/common/aix/qplatformdefs.h.orig
++++ mkspecs/common/aix/qplatformdefs.h
+@@ -87,0 +88,4 @@
++// Undefine problematic AIX macros before including Qt headers
++#ifdef truncate
++#undef truncate
++#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

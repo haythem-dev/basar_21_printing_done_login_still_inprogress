@@ -1,0 +1,6 @@
+c++ -g -std=c++17 -maix64 -o infrastructure_test main.cpp -maix64
+g++: error: unrecognized command-line option ‘-maix64’
+g++: error: unrecognized command-line option ‘-maix64’
+make: *** [makefile:19: infrastructure_test] Error 1
+
+ERROR: Build failed - executable not created

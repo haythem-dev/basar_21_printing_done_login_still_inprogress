@@ -1,0 +1,15 @@
+Basar Regression Test: ssl_version_test
+Test 1: OpenSSL Version Support
+OpenSSL version support verified
+Test 2: API Compatibility Layer
+API compatibility layer verified
+Test 3: Protocol Version Selection
+Protocol version selection verified
+Test 4: Version Negotiation
+Version negotiation verified
+Test 5: GCC Compatibility
+GCC compatibility verified
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libopensslwrap.so

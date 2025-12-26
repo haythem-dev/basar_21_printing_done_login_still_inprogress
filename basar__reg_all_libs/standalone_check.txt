@@ -1,0 +1,120 @@
+
+=========================================
+Test 12: standalone/cpp_basics
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/cpp_basics/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/cpp_basics
+Exit code: 0
+
+
+==> Checking ]basar/regression/standalone/cpp_basics/go.out[ for patterns from ]basar/regression/standalone/cpp_basics/patterns.txt[
+Pattern 'Basar Regression Test: cpp_basics' found.
+Pattern 'Test 1: String Operations' found.
+Pattern 'String value: Hello Basar' found.
+Pattern 'String length:' found.
+Pattern 'String operations verified' found.
+Pattern 'Test 2: Vector Operations' found.
+Pattern 'Vector size: 5' found.
+Pattern 'Vector capacity:' found.
+Pattern 'Vector operations verified' found.
+Pattern 'Test 3: Arithmetic Operations' found.
+Pattern 'Sum of elements: 15' found.
+Pattern 'Arithmetic operations verified' found.
+Pattern 'Test 4: Smart Pointer Operations' found.
+Pattern 'Smart pointer value: 42' found.
+Pattern 'Smart pointer not null: true' found.
+Pattern 'Smart pointer operations verified' found.
+Pattern 'Test 5: Exception Handling Basics' found.
+Pattern 'Exception caught: Test exception' found.
+Pattern 'Exception handling verified' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' NOT found.
+==> 21 out of 22 patterns found. Success rate: 95%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -o cpp_basics main.cpp -maix64
+  Build successful - binary created
+  =========================================
+    Basar Regression Test: cpp_basics
+  =========================================
+
+  Test 1: String Operations
+    String value: Hello Basar
+    String length: 11
+    String operations verified
+
+=========================================
+Test 13: standalone/filesystem_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/filesystem_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/filesystem_test
+Exit code: 0
+ERROR: No output file generated (go.out missing)
+✗ FAILED
+
+=========================================
+Test 14: standalone/infrastructure_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/standalone/infrastructure_test/go.out[ for patterns from ]basar/regression/standalone/infrastructure_test/patterns.txt[
+Pattern 'Basar Regression Test: infrastructure_test' found.
+Pattern 'Test 1: Build System Validation' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Compilation verified' found.
+Pattern 'Test 2: Standard Library Availability' found.
+Pattern 'iostream available' found.
+Pattern 'cstdlib available' found.
+Pattern 'Standard library verified' found.
+Pattern 'Test 3: Output Stream Functionality' found.
+Pattern 'stdout stream operational' found.
+Pattern 'Output stream verified' found.
+Pattern 'Test 4: Command Line Arguments' found.
+Pattern 'argc value:' found.
+Pattern 'argv accessible: yes' found.
+Pattern 'Command line arguments verified' found.
+Pattern 'Test 5: Exit Code Handling' found.
+Pattern 'Test execution: PASS' found.
+Pattern 'Exit code: 0' found.
+Pattern 'Exit code handling verified' found.
+Pattern 'Test completed successfully' found.
+==> 20 out of 20 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 15: standalone/memory_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/memory_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/memory_test
+Exit code: 0
+ERROR: No output file generated (go.out missing)
+✗ FAILED
+
+=========================================
+Test 16: standalone/threading_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/threading_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/threading_test
+Exit code: 0
+ERROR: No output file generated (go.out missing)
+✗ FAILED
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  16
+Passed:       12
+Failed:       4
+
+End time: Sun Dec  7 22:25:53 CET 2025
+
+FAILURE: 4 of 16 tests failed ✗
+
+See /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/regression.summary for details
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #

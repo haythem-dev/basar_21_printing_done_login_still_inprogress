@@ -1,0 +1,183 @@
+
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # chmod +x do_regression.sh
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # chmod +x check_patterns.sh
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ./do_regression.sh
+Cleaning old test outputs...
+=========================================
+  Basar Regression Test Suite
+=========================================
+
+Regression directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression
+Start time: Sun Nov 23 18:15:23 CET 2025
+
+=========================================
+Test 1: libbasarcmnutil/date_operations
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/date_operations/go.out[ for patterns from ]basar/regression/libbasarcmnutil/date_operations/patterns.txt[
+Pattern 'Basar Date Operations Test' NOT found.
+Pattern 'Test 1: Date Creation' NOT found.
+Pattern 'Created date: 2024-04-22' NOT found.
+Pattern 'Year: 2024' NOT found.
+Pattern 'Month: 4' NOT found.
+Pattern 'Day: 22' NOT found.
+Pattern 'Test 2: Date Arithmetic' NOT found.
+Pattern 'After adding 10 days: 2024-05-02' NOT found.
+Pattern 'Test 3: Calculate Days Between Dates' NOT found.
+Pattern 'Days from date1 to date2: 10' NOT found.
+Pattern 'Test 4: Date Validation' NOT found.
+Pattern '2024-02-29 is valid: yes' NOT found.
+Pattern '2023-02-29 is valid: no' NOT found.
+Pattern 'Test 5: Current Date' NOT found.
+Pattern 'Today is valid: yes' NOT found.
+Pattern 'All date operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 19 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../../.. -I../../../../../ext/log4cplus/include -o date_operations main.cpp -L../../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil/libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil/libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: date_operations] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 2: libbasarcmnutil/decimal_arithmetic
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/decimal_arithmetic/go.out[ for patterns from ]basar/regression/libbasarcmnutil/decimal_arithmetic/patterns.txt[
+Pattern 'Basar Decimal Arithmetic Test' NOT found.
+Pattern 'Test 1: Decimal Creation' NOT found.
+Pattern 'Decimal from string '123.45': 123.45' NOT found.
+Pattern 'Test 2: Decimal Addition' NOT found.
+Pattern '123.45 + 67.89 = 191.34' NOT found.
+Pattern 'Test 3: Decimal Subtraction' NOT found.
+Pattern '123.45 - 67.89 = 55.56' NOT found.
+Pattern 'Test 4: Decimal Multiplication' NOT found.
+Pattern 'Test 5: Decimal Comparison' NOT found.
+Pattern '100.00 < 200.00: true' NOT found.
+Pattern '200.00 > 100.00: true' NOT found.
+Pattern 'Test 6: Decimal Precision' NOT found.
+Pattern 'All decimal operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 16 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../../.. -I../../../../../ext/log4cplus/include -o decimal_arithmetic main.cpp -L../../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil/libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil/libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: decimal_arithmetic] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 3: libbasarcmnutil/hello_basar
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/hello_basar/go.out[ for patterns from ]basar/regression/libbasarcmnutil/hello_basar/patterns.txt[
+Pattern 'Hello from Basar!' NOT found.
+Pattern 'Version:' NOT found.
+Pattern 'Test completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 6 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  SKIPPED: log4cplus not found - Basar environment not fully set up
+  This test requires the full Basar development environment
+
+=========================================
+Test 4: standalone/infrastructure_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test/go.sh
+
+
+==> Checking ]basar/regression/standalone/infrastructure_test/go.out[ for patterns from ]basar/regression/standalone/infrastructure_test/patterns.txt[
+Pattern '' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Basar Regression Infrastructure Test' found.
+Pattern 'Test execution: PASS' found.
+Pattern 'Exit code: 0' found.
+Pattern 'Test execution completed with exit code 0' found.
+==> 6 out of 6 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  4
+Passed:       1
+Failed:       3
+
+End time: Sun Nov 23 18:15:25 CET 2025
+
+FAILURE: 3 of 4 tests failed ✗
+
+See /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/regression.summary for details
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # cd ../../../
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev # cd ext
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext # ls
+boost        ghostscript  libssh2      log4cplus    openldap     openssl      qt5          unittestpp   zlib
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext #
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/ext # cd ../src
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # ls
+basar         basar_trial   build.xml     experimental  ivy.xml
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src # cd basar
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # ls
+basar.sln               doxygen                 libbasarappl            libbasardbsql           libbasarguitie          libbasarproperty        library                 makefile.inc            regression
+changelog.txt           libbasar_definitions.h  libbasarcmnutil         libbasardebug           libbasarlogin           libbasarqtwidget        macro.h                 proc                    release.md
+data                    libbasar_pkgversion.h   libbasardbaspect        libbasarguiqt           libbasarprinting        libopensslwrap          makefile                props                   test
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar # cd libbasarcmnutil
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/libbasarcmnutil # ls
+attachment.cpp                               libbasarcmnutil_config.h                     libbasarcmnutil_icredential.h                libbasarcmnutil_socket.h                     release
+attachmentptr.h                              libbasarcmnutil_credentialbase.cpp           libbasarcmnutil_icredentialptr.h             libbasarcmnutil_sshsessionptr.h              remoteendpoint.cpp
+base64.cpp                                   libbasarcmnutil_credentialbase.h             libbasarcmnutil_iremotetaskcallback.h        libbasarcmnutil_timespan.cpp                 remotetask.cpp
+config.cpp                                   libbasarcmnutil_credentialbaseptr.h          libbasarcmnutil_iremotetaskcallbackptr.h     libbasarcmnutil_timespan.h                   remotetask.h
+debug                                        libbasarcmnutil_credentialsref.cpp           libbasarcmnutil_iremotetaskptr.h             libbasarcmnutil_userpasscredential.cpp       remotetaskexecution.cpp
+deps                                         libbasarcmnutil_credentialsref.h             libbasarcmnutil_iremotetaskresultptr.h       libbasarcmnutil_userpasscredential.h         remotetaskexecution.h
+getexecname.cpp                              libbasarcmnutil_date.cpp                     libbasarcmnutil_locale.cpp                   loggerpool.cpp                               remotetaskexitstatus.cpp
+getexecname.h                                libbasarcmnutil_date.h                       libbasarcmnutil_locale.h                     loggerpool.h                                 remotetaskexitstatus.h
+getlibpath.cpp                               libbasarcmnutil_datetime.cpp                 libbasarcmnutil_logging.cpp                  lpr.cpp                                      remotetaskptr.h
+getlibpath.h                                 libbasarcmnutil_datetime.h                   libbasarcmnutil_logging.h                    lpr.h                                        remotetaskresult.cpp
+iattachment.h                                libbasarcmnutil_datetimeexception.cpp        libbasarcmnutil_parameterlist.cpp            mailhelper.cpp                               remotetaskresult.h
+init.cpp                                     libbasarcmnutil_datetimeexception.h          libbasarcmnutil_parameterlist.h              mailhelper.h                                 remotetaskresultptr.h
+iprintsubmit.h                               libbasarcmnutil_datetimetools.cpp            libbasarcmnutil_parameterlist_iterator.cpp   mailmessage.cpp                              remotetasksubmitterimpl.cpp
+iremotetask.h                                libbasarcmnutil_datetimetools.h              libbasarcmnutil_pattern.h                    makefile                                     remotetasksubmitterimpl.h
+iremotetaskresult.h                          libbasarcmnutil_datetypes_common.h           libbasarcmnutil_pipedprocess.h               mimechar.cpp                                 smtp.cpp
+iremotetasksubmitter.h                       libbasarcmnutil_decimal.cpp                  libbasarcmnutil_print.h                      pipe.cpp                                     sshchannel.cpp
+libbasarcmnutil.cpp                          libbasarcmnutil_decimal.h                    libbasarcmnutil_remote.h                     pipe.h                                       sshchannel.h
+libbasarcmnutil.h                            libbasarcmnutil_definitions.h                libbasarcmnutil_remoteendpoint.h             pipedprocess.cpp                             sshsession.cpp
+libbasarcmnutil.vcxproj                      libbasarcmnutil_email.h                      libbasarcmnutil_remotetaskexceptions.h       portprint.cpp                                sshsession.h
+libbasarcmnutil.vcxproj.filters              libbasarcmnutil_exceptions.cpp               libbasarcmnutil_remotetaskref.cpp            portprint.h                                  tcpsocket.cpp
+libbasarcmnutil_attachment.h                 libbasarcmnutil_exceptions.h                 libbasarcmnutil_remotetaskref.h              printtools.cpp                               tcpsocketsharedptr.h
+libbasarcmnutil_bstring.cpp                  libbasarcmnutil_functions.h                  libbasarcmnutil_remotetaskresultref.cpp      ps                                           timestamp.cpp
+libbasarcmnutil_bstring.h                    libbasarcmnutil_i18nstring.cpp               libbasarcmnutil_remotetaskresultref.h        quotedprint.cpp                              timestamp.h
+libbasarcmnutil_cmdline.cpp                  libbasarcmnutil_i18nstring.h                 libbasarcmnutil_remotetasksubmitter.h        rawprint.cpp
+libbasarcmnutil_cmdline.h                    libbasarcmnutil_iattachment.h                libbasarcmnutil_remotetasksubmitterbase.cpp  rawprintprocdataprov.cpp
+libbasarcmnutil_codec.h                      libbasarcmnutil_iattachmentptr.h             libbasarcmnutil_remotetasksubmitterbase.h    rawprintprocdataprov.h
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/libbasarcmnutil #

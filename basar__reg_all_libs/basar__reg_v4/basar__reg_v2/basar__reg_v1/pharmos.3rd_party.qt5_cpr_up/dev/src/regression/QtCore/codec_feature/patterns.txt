@@ -1,0 +1,6 @@
+pkg-install/lib/libQt5Core.so
+std=c++17
+UTF-8 bytes:
+Decoded from Latin1:
+"Hello, ??!"
+\\x

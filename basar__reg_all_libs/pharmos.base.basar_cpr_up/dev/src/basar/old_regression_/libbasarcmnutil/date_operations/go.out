@@ -1,0 +1,6 @@
+c++ -g -std=c++17 -maix64 -pthread -I../../../.. -I../../../../../ext/log4cplus/include -o date_operations main.cpp -L../../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+g++: error: unrecognized command-line option ‘-maix64’
+g++: error: unrecognized command-line option ‘-maix64’
+make: *** [makefile:34: date_operations] Error 1
+
+ERROR: Build failed - executable not created

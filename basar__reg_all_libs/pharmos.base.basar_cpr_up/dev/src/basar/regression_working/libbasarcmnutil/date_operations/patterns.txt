@@ -1,0 +1,19 @@
+Basar Date Operations Test
+Test 1: Date Creation
+Created date: 2024-04-22
+Year: 2024
+Month: 4
+Day: 22
+Test 2: Date Arithmetic
+After adding 10 days: 2024-05-02
+Test 3: Calculate Days Between Dates
+Days from date1 to date2: 10
+Test 4: Date Validation
+2024-02-29 is valid: yes
+2023-02-29 is valid: no
+Test 5: Current Date
+Today is valid: yes
+All date operations completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+<project name="qt5" default="help" basedir=".">
+    <!-- ====================================================== -->
+
+    <property name="settings_server" value="tfs-nexus"/>
+    <property name="settings_version" value="2.0.0"/>
+
+    <include>
+        <url url="http://${settings_server}:8081/repository/genesis/eu/phoenixgroup/buildenv_ivy/${settings_version}/macro.ant-${settings_version}.xml"/>
+    </include>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="help">
+        <displayHelp/>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="prepare" description="extract archives">
+        <buildScriptWin  path="." script="proc\prepare.bat"/>
+        <buildScriptUnix path="." script="proc/prepare.sh"/>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="build" description="build without prepare">
+        <property name="BUILD_VARIANT" value="release"/>
+        <buildScriptWin  path="." script="proc\build.bat"/>
+        <buildScriptUnix path="." script="proc/build.sh"/>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="full" description="clean rebuild (release only - default)" depends="prepare">
+        <property name="BUILD_VARIANT" value="release"/>
+        <buildScriptWin  path="." script="proc\build.bat"/>
+        <buildScriptUnix path="." script="proc/build.sh"/>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="full-release" description="clean rebuild (release only - explicit)" depends="prepare">
+        <property name="BUILD_VARIANT" value="release"/>
+        <buildScriptWin  path="." script="proc\build.bat"/>
+        <buildScriptUnix path="." script="proc/build.sh"/>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="full-debug" description="clean rebuild (debug only)" depends="prepare">
+        <echo message="Starting debug build"/>
+        <exec executable="sh" osfamily="unix" failonerror="true">
+            <env key="BUILD_VARIANT" value="debug"/>
+            <arg value="proc/build.sh"/>
+        </exec>
+        <exec executable="cmd" osfamily="windows" failonerror="true">
+            <env key="BUILD_VARIANT" value="debug"/>
+            <arg value="/c"/>
+            <arg value="proc\build.bat"/>
+        </exec>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="full-both" description="clean rebuild (both debug and release)" depends="prepare">
+        <echo message="Starting both debug and release builds"/>
+        <exec executable="sh" osfamily="unix" failonerror="true">
+            <env key="BUILD_VARIANT" value="both"/>
+            <arg value="proc/build.sh"/>
+        </exec>
+        <exec executable="cmd" osfamily="windows" failonerror="true">
+            <env key="BUILD_VARIANT" value="both"/>
+            <arg value="/c"/>
+            <arg value="proc\build.bat"/>
+        </exec>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="incremental" description="only changed sources are built">
+        <buildScriptWin  path="." script="proc\build.bat"/>
+        <buildScriptUnix path="." script="proc/build.sh"/>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="export" description="exporting and compressing created artifacts">
+        <buildScriptWin  path="." script="proc\export.bat"/>
+        <buildScriptUnix path="." script="proc/export.sh" />
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="retrieve">
+        <retrieve additional-config="compile"/>
+    </target>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <target name="publish">
+        <publish/>
+    </target>
+
+    <!-- ====================================================== -->
+</project>

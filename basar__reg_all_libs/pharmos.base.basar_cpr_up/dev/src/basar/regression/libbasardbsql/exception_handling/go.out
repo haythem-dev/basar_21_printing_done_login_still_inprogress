@@ -1,0 +1,29 @@
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o exception_handling main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasardbsql -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+Build successful - binary created
+
+=========================================
+  Running test
+=========================================
+
+=========================================
+  Basar Regression Test: exception_handling
+=========================================
+
+Test 1: DbException construction
+DbException: Test error
+  DbException caught successfully
+
+Test 2: Exception hierarchy
+DbException: Test error
+  Exception caught as base class
+
+=========================================
+  Test completed successfully
+=========================================
+
+=========================================
+  Test exit code: 0
+=========================================

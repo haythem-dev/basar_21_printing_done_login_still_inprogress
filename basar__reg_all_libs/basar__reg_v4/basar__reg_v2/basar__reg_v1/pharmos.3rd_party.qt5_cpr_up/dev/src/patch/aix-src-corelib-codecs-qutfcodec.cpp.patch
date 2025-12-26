@@ -1,0 +1,32 @@
+# Fix for AIX truncate macro in qutfcodec.cpp
+--- src/corelib/codecs/qutfcodec.cpp.orig
++++ src/corelib/codecs/qutfcodec.cpp
+@@ -39,0 +40,9 @@
++
++#ifdef _AIX
++// AIX truncate macro interferes with Qt method calls
++// Undefine it for this compilation unit
++#ifdef truncate
++#undef truncate
++#endif
++#endif
++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

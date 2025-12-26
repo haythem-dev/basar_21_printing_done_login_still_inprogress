@@ -1,0 +1,17 @@
+Basar String Operations Test
+Test 1: String Creation
+Created string: Hello Basar
+Test 2: String Concatenation
+Concatenated: Hello Basar Framework
+Test 3: String Length
+Length of 'Hello Basar': 11
+Test 4: String Comparison
+Alpha == Beta: false
+Alpha < Beta: true
+Test 5: String Empty Check
+Empty string isEmpty: true
+Non-empty string isEmpty: false
+All string operations completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

@@ -1,0 +1,40 @@
+g++ -g -std=c++17 -maix64 -pthread -o filesystem_test main.cpp -maix64 -pthread
+
+Build successful - binary created
+
+=========================================
+  Linked libraries
+=========================================
+filesystem_test needs:
+	 /usr/lib/libc.a(shr_64.o)
+	 /usr/lib/libpthreads.a(shr_xpg5_64.o)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libstdc++.a(libstdc++.so.6)
+	 /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/pthread/ppc64/libgcc_s.a(shr.o)
+	 /unix
+	 /usr/lib/libcrypt.a(shr_64.o)
+
+=========================================
+  Basar Regression Test: filesystem_test
+=========================================
+
+Test 1: File Creation
+  File created successfully
+  Content written successfully
+
+Test 2: File Reading
+  Lines read: 2
+
+Test 3: File Append
+  Content appended successfully
+
+Test 4: File Size Check
+  File size: 54 bytes
+
+Test 5: File Deletion
+  File deleted successfully
+
+=========================================
+  Test completed successfully
+=========================================
+
+Test execution completed with exit code 0

@@ -1,0 +1,32 @@
+# Fix timespec structure handling on AIX  
+--- qmake/library/ioutils.cpp.orig
++++ qmake/library/ioutils.cpp
+@@ -232,1 +232,7 @@
+-    const struct timespec times[2] = { { 0, UTIME_NOW }, st.st_mtim };
++#    ifdef _AIX
++    // AIX has different timespec structure layout
++    const struct timespec times[2] = { { 0, UTIME_NOW }, 
++                                      { st.st_mtim.tv_sec, st.st_mtim.tv_nsec } };
++#    else
++    const struct timespec times[2] = { { 0, UTIME_NOW }, st.st_mtim };
++#    endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

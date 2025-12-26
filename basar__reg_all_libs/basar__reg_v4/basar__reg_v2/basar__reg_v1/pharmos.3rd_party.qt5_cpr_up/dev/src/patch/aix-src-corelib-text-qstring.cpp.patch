@@ -1,0 +1,31 @@
+# Fix for AIX truncate macro in qstring.cpp
+--- src/corelib/text/qstring.cpp.orig
++++ src/corelib/text/qstring.cpp
+@@ -41,0 +42,8 @@
++#ifdef _AIX
++// AIX truncate macro interferes with Qt method calls
++// Undefine it for this compilation unit
++#ifdef truncate
++#undef truncate
++#endif
++#endif
++
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

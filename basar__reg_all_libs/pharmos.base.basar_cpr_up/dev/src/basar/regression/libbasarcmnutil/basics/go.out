@@ -1,0 +1,7 @@
+test_basar.cpp:23:10: fatal error: libbasarcmnutil.h: No such file or directory
+   23 | #include "libbasarcmnutil.h"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+ldd: ./test_basar: File does not exist or is empty.
+./go.sh: line 34: ./test_basar: A file or directory in the path name does not exist.
+does not exist.

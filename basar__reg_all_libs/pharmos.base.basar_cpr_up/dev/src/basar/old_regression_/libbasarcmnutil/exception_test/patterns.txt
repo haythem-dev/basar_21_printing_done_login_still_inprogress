@@ -1,0 +1,17 @@
+Basar Exception Handling Test
+Test 1: ExceptInfo Creation
+ExceptInfo created successfully
+Test 2: Exception Throw and Catch
+Exception caught:
+Test 3: Exception Hierarchy
+Caught as std::exception: success
+Test 4: Nested Exception Handling
+Inner exception caught, rethrowing
+Outer handler caught rethrown exception
+Test 5: Exception Message Content
+ExceptInfo function: test verified
+ExceptInfo message: verified
+All exception tests completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarcmnutil.so

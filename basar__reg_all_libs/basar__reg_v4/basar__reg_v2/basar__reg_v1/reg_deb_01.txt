@@ -1,0 +1,111 @@
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ./do_regression.sh
+ksh: ./do_regression.sh: 0403-006 Execute permission denied.
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ls
+check_patterns.sh  do_regression.sh   libbasarcmnutil    new_test.sh        standalone
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # chmod +x do_regression.sh
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression # ./do_regression.sh
+Cleaning old test outputs...
+find: 0652-017 -delete is not a valid option.
+find: 0652-017 -delete is not a valid option.
+=========================================
+  Basar Regression Test Suite
+=========================================
+
+Regression directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression
+Start time: Sun Nov 23 10:32:27 CET 2025
+
+=========================================
+Test 1: libbasarcmnutil/date_operations
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations/go.sh
+
+./do_regression.sh: line 77: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/check_patterns.sh: The file access permissions do not allow the specified action.
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++11 -I../../.. -I../../../../ext/log4cplus/include -o date_operations main.cpp -L../../../library/lib/debug -L../../../../ext/log4cplus/lib/debug -lbasarcmnutil -lbasardebug -llog4cplus
+  In file included from ../../../libbasarcmnutil/libbasarcmnutil.h:31,
+                   from main.cpp:1:
+  ../../../libbasarcmnutil/libbasarcmnutil_logging.h:32:10: fatal error: log4cplus/logger.h: No such file or directory
+     32 | #include <log4cplus/logger.h>
+        |          ^~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:30: date_operations] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 2: libbasarcmnutil/decimal_arithmetic
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic/go.sh
+
+./do_regression.sh: line 77: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/check_patterns.sh: The file access permissions do not allow the specified action.
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++11 -I../../.. -I../../../../ext/log4cplus/include -o decimal_arithmetic main.cpp -L../../../library/lib/debug -L../../../../ext/log4cplus/lib/debug -lbasarcmnutil -lbasardebug -llog4cplus
+  In file included from ../../../libbasarcmnutil/libbasarcmnutil.h:31,
+                   from main.cpp:1:
+  ../../../libbasarcmnutil/libbasarcmnutil_logging.h:32:10: fatal error: log4cplus/logger.h: No such file or directory
+     32 | #include <log4cplus/logger.h>
+        |          ^~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:30: decimal_arithmetic] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 3: libbasarcmnutil/hello_basar
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar/go.sh
+
+./do_regression.sh: line 77: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/check_patterns.sh: The file access permissions do not allow the specified action.
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++11 -I../../.. -I../../../../ext/log4cplus/include -o hello_basar main.cpp -L../../../library/lib/debug -L../../../../ext/log4cplus/lib/debug -lbasarcmnutil -lbasardebug -llog4cplus
+  In file included from ../../../libbasarcmnutil/libbasarcmnutil.h:31,
+                   from main.cpp:1:
+  ../../../libbasarcmnutil/libbasarcmnutil_logging.h:32:10: fatal error: log4cplus/logger.h: No such file or directory
+     32 | #include <log4cplus/logger.h>
+        |          ^~~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:30: hello_basar] Error 1
+
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 4: standalone/infrastructure_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test/go.sh
+
+./do_regression.sh: line 77: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/check_patterns.sh: The file access permissions do not allow the specified action.
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++11  -o infrastructure_test main.cpp
+
+  Build successful - binary created
+
+  =========================================
+    Linked libraries
+  =========================================
+  infrastructure_test needs:
+         /usr/lib/libc.a(shr.o)
+         /opt/freeware/lib/gcc/powerpc-ibm-aix7.2.0.0/12/libstdc++.a(libstdc++.so.6)
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  4
+Passed:       0
+Failed:       4
+
+End time: Sun Nov 23 10:32:29 CET 2025
+
+FAILURE: 4 of 4 tests failed ✗
+
+See /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/regression.summary for details
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression #
+

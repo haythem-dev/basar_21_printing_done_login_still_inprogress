@@ -1,0 +1,9 @@
+#
+/export
+/dev/ext
+/dev/src/qt*
+/dev/src/build
+/dev/src/pkg-install
+/dev/src/sources/*/ivy-*.xml
+/dev/src/sources/*/*.tar.xz
+/dev/src/sources/*/*.zip

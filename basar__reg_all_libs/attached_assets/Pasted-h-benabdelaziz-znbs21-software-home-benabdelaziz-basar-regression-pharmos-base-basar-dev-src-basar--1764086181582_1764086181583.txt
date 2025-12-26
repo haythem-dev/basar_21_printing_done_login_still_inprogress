@@ -1,0 +1,35 @@
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar # ./go.sh
+=========================================
+  Building hello_basar
+=========================================
+
+rm -f hello_basar *.o go.out
+g++ -g -std=c++17 -maix64 -pthread -I../../../library/include -I../../../../../ext/log4cplus/include -I../../../../../ext/boost/include -o hello_basar main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+ld: 0711-224 WARNING: Duplicate symbol: .__init_aix_libgcc_cxa_atexit
+ld: 0711-345 Use the -bloadmap or -bnoquiet option to obtain more information.
+
+Build successful - binary created
+
+=========================================
+  Checking linked libraries
+=========================================
+         ../../../library/lib/debug/libbasarcmnutil.so
+         ../../../library/lib/debug/libbasardebug.so
+         ../../../../../ext/log4cplus/lib/debug/liblog4cplus.so
+
+=========================================
+  Running test
+=========================================
+
+exec(): 0509-036 Cannot load program ./hello_basar because of the following errors:
+        0509-022 Cannot load module ../../../library/lib/debug/libbasarcmnutil.so.
+        0509-150   Dependent module libifgen.so could not be loaded.
+        0509-022 Cannot load module libifgen.so.
+        0509-026 System error: A file or directory in the path name does not exist.
+        0509-022 Cannot load module hello_basar.
+        0509-150   Dependent module ../../../library/lib/debug/libbasarcmnutil.so could not be loaded.
+
+=========================================
+  Test exit code: 0
+=========================================
+h.benabdelaziz@znbs21:/software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar #

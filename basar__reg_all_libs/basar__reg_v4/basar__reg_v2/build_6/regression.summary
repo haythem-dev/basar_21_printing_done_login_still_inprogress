@@ -1,0 +1,137 @@
+=========================================
+  Basar Regression Test Suite
+=========================================
+
+Regression directory: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression
+Start time: Sun Nov 23 18:49:45 CET 2025
+
+=========================================
+Test 1: libbasarcmnutil/date_operations
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/date_operations/go.out[ for patterns from ]basar/regression/libbasarcmnutil/date_operations/patterns.txt[
+Pattern 'Basar Date Operations Test' NOT found.
+Pattern 'Test 1: Date Creation' NOT found.
+Pattern 'Created date: 2024-04-22' NOT found.
+Pattern 'Year: 2024' NOT found.
+Pattern 'Month: 4' NOT found.
+Pattern 'Day: 22' NOT found.
+Pattern 'Test 2: Date Arithmetic' NOT found.
+Pattern 'After adding 10 days: 2024-05-02' NOT found.
+Pattern 'Test 3: Calculate Days Between Dates' NOT found.
+Pattern 'Days from date1 to date2: 10' NOT found.
+Pattern 'Test 4: Date Validation' NOT found.
+Pattern '2024-02-29 is valid: yes' NOT found.
+Pattern '2023-02-29 is valid: no' NOT found.
+Pattern 'Test 5: Current Date' NOT found.
+Pattern 'Today is valid: yes' NOT found.
+Pattern 'All date operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 19 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../.. -I../../../../../ext/log4cplus/include -o date_operations main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: date_operations] Error 1
+  
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 2: libbasarcmnutil/decimal_arithmetic
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/decimal_arithmetic/go.out[ for patterns from ]basar/regression/libbasarcmnutil/decimal_arithmetic/patterns.txt[
+Pattern 'Basar Decimal Arithmetic Test' NOT found.
+Pattern 'Test 1: Decimal Creation' NOT found.
+Pattern 'Decimal from string '123.45': 123.45' NOT found.
+Pattern 'Test 2: Decimal Addition' NOT found.
+Pattern '123.45 + 67.89 = 191.34' NOT found.
+Pattern 'Test 3: Decimal Subtraction' NOT found.
+Pattern '123.45 - 67.89 = 55.56' NOT found.
+Pattern 'Test 4: Decimal Multiplication' NOT found.
+Pattern 'Test 5: Decimal Comparison' NOT found.
+Pattern '100.00 < 200.00: true' NOT found.
+Pattern '200.00 > 100.00: true' NOT found.
+Pattern 'Test 6: Decimal Precision' NOT found.
+Pattern 'All decimal operations completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 16 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../.. -I../../../../../ext/log4cplus/include -o decimal_arithmetic main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: decimal_arithmetic] Error 1
+  
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 3: libbasarcmnutil/hello_basar
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar/go.sh
+
+
+==> Checking ]basar/regression/libbasarcmnutil/hello_basar/go.out[ for patterns from ]basar/regression/libbasarcmnutil/hello_basar/patterns.txt[
+Pattern 'Hello from Basar!' NOT found.
+Pattern 'Version:' NOT found.
+Pattern 'Test completed successfully' NOT found.
+Pattern 'Build successful - binary created' NOT found.
+Pattern 'Test exit code: 0' NOT found.
+Pattern 'libbasarcmnutil.so' NOT found.
+==> 0 out of 6 patterns found. Success rate: 0%
+✗ FAILED
+
+First 10 lines of test output:
+  g++ -g -std=c++17 -maix64 -pthread -I../../.. -I../../../../../ext/log4cplus/include -o hello_basar main.cpp -L../../../library/lib/debug -L../../../../../ext/log4cplus/lib/debug -L../../../../../ext/boost/lib -lbasarcmnutil -lbasardebug -llog4cplus -lboost_system -lboost_filesystem -maix64 -pthread -Wl,-brtl
+  main.cpp:1:10: fatal error: libbasarcmnutil.h: No such file or directory
+      1 | #include "libbasarcmnutil.h"
+        |          ^~~~~~~~~~~~~~~~~~~
+  compilation terminated.
+  make: *** [makefile:34: hello_basar] Error 1
+  
+  ERROR: Build failed - executable not created
+
+=========================================
+Test 4: standalone/infrastructure_test
+=========================================
+Running: /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test/go.sh
+
+
+==> Checking ]basar/regression/standalone/infrastructure_test/go.out[ for patterns from ]basar/regression/standalone/infrastructure_test/patterns.txt[
+Pattern '' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Basar Regression Infrastructure Test' found.
+Pattern 'Test execution: PASS' found.
+Pattern 'Exit code: 0' found.
+Pattern 'Test execution completed with exit code 0' found.
+==> 6 out of 6 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  4
+Passed:       1
+Failed:       3
+
+End time: Sun Nov 23 18:49:47 CET 2025
+
+FAILURE: 3 of 4 tests failed ✗
+
+See /software/home/benabdelaziz/basar_regression/pharmos.base.basar/dev/src/basar/regression/regression.summary for details

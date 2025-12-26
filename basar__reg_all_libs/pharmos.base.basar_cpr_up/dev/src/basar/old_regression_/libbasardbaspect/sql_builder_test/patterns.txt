@@ -1,0 +1,15 @@
+Basar Regression Test: sql_builder_test
+Test 1: SQL String Builder Interface
+SQL string builder interface verified
+Test 2: Prepared Statement Builder
+Prepared statement builder available
+Test 3: Builder Type Indexes
+Builder type indexes defined
+Test 4: Builder List
+SQL string builder list available
+Test 5: Builder Reference
+SQL string builder reference validated
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasardbaspect.so

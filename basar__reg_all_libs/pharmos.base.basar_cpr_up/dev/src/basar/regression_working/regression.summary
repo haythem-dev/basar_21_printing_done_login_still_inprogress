@@ -1,0 +1,453 @@
+=========================================
+  Basar Regression Test Suite
+=========================================
+
+Regression directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression
+Start time: Thu Dec 25 17:56:55 CET 2025
+
+=========================================
+Test 1: libbasarcmnutil/date_operations
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/date_operations
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasarcmnutil/date_operations/go.out[ for patterns from ]basar/regression/libbasarcmnutil/date_operations/patterns.txt[
+Pattern 'Basar Date Operations Test' found.
+Pattern 'Test 1: Date Creation' found.
+Pattern 'Created date: 2024-04-22' found.
+Pattern 'Year: 2024' found.
+Pattern 'Month: 4' found.
+Pattern 'Day: 22' found.
+Pattern 'Test 2: Date Arithmetic' found.
+Pattern 'After adding 10 days: 2024-05-02' found.
+Pattern 'Test 3: Calculate Days Between Dates' found.
+Pattern 'Days from date1 to date2: 10' found.
+Pattern 'Test 4: Date Validation' found.
+Pattern '2024-02-29 is valid: yes' found.
+Pattern '2023-02-29 is valid: no' found.
+Pattern 'Test 5: Current Date' found.
+Pattern 'Today is valid: yes' found.
+Pattern 'All date operations completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasarcmnutil.so' found.
+==> 19 out of 19 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 2: libbasarcmnutil/decimal_arithmetic
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/decimal_arithmetic
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasarcmnutil/decimal_arithmetic/go.out[ for patterns from ]basar/regression/libbasarcmnutil/decimal_arithmetic/patterns.txt[
+Pattern '' found.
+Pattern 'Basar Decimal Arithmetic Test' found.
+Pattern 'Test 1: Decimal Creation' found.
+Pattern '12345.0' found.
+Pattern 'Test 2: Decimal Addition' found.
+Pattern '19134.0' found.
+Pattern 'Test 3: Decimal Subtraction' found.
+Pattern '5556.0' found.
+Pattern 'Test 4: Decimal Multiplication' found.
+Pattern 'Test 5: Decimal Comparison' found.
+Pattern '100.00 < 200.00: true' found.
+Pattern '200.00 > 100.00: true' found.
+Pattern 'Test 6: Decimal Precision' found.
+Pattern 'All decimal operations completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasarcmnutil.so' found.
+==> 17 out of 17 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 3: libbasarcmnutil/hello_basar
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasarcmnutil/hello_basar
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasarcmnutil/hello_basar/go.out[ for patterns from ]basar/regression/libbasarcmnutil/hello_basar/patterns.txt[
+Pattern 'Hello from Basar!' found.
+Pattern 'Version:' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasarcmnutil.so' found.
+==> 6 out of 6 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 4: libbasardbaspect/accessor_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/accessor_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/accessor_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/accessor_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/accessor_test/patterns.txt[
+Pattern 'Basar Regression Test: accessor_test' found.
+Pattern 'Test 1: Accessor Interface' found.
+Pattern 'Accessor interface verified' found.
+Pattern 'Test 2: Accessor Definition' found.
+Pattern 'Accessor definition list available' found.
+Pattern 'Test 3: Accessor Instance' found.
+Pattern 'Accessor instance management verified' found.
+Pattern 'Test 4: Accessor Execute' found.
+Pattern 'Accessor execute mechanism available' found.
+Pattern 'Test 5: Accessor Listener' found.
+Pattern 'Accessor execute listener validated' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 5: libbasardbaspect/caching_policy_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/caching_policy_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/caching_policy_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/caching_policy_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/caching_policy_test/patterns.txt[
+Pattern 'Basar Regression Test: caching_policy_test' found.
+Pattern 'Test 1: Caching Policy Base' found.
+Pattern 'Caching policy base class verified' found.
+Pattern 'Test 2: Full Caching' found.
+Pattern 'Full caching policy available' found.
+Pattern 'Test 3: No Caching' found.
+Pattern 'No caching policy available' found.
+Pattern 'Test 4: On Demand Caching' found.
+Pattern 'On demand caching policy available' found.
+Pattern 'Test 5: Single Row Caching' found.
+Pattern 'Single row caching policy available' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 6: libbasardbaspect/connection_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/connection_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/connection_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/connection_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/connection_test/patterns.txt[
+Pattern 'Basar Regression Test: connection_test' found.
+Pattern 'Test 1: Connection Header' found.
+Pattern 'Connection header included successfully' found.
+Pattern 'Test 2: Connection Structure' found.
+Pattern 'Connection structure verified' found.
+Pattern 'Test 3: Connection Reference' found.
+Pattern 'Connection reference type available' found.
+Pattern 'Test 4: Connection Pool' found.
+Pattern 'Connection pool mechanism verified' found.
+Pattern 'Test 5: Connection Lifecycle' found.
+Pattern 'Connection lifecycle management validated' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 7: libbasardbaspect/manager_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/manager_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/manager_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/manager_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/manager_test/patterns.txt[
+Pattern 'Basar Regression Test: manager_test' found.
+Pattern 'Test 1: Manager Interface' found.
+Pattern 'Database aspect manager interface verified' found.
+Pattern 'Test 2: Manager Implementation' found.
+Pattern 'Manager implementation available' found.
+Pattern 'Test 3: Accessor Management' found.
+Pattern 'Accessor management through manager verified' found.
+Pattern 'Test 4: Connection Management' found.
+Pattern 'Connection management through manager verified' found.
+Pattern 'Test 5: Cache Controller' found.
+Pattern 'Cache controller management verified' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 8: libbasardbaspect/sql_builder_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/sql_builder_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbaspect/sql_builder_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbaspect/sql_builder_test/go.out[ for patterns from ]basar/regression/libbasardbaspect/sql_builder_test/patterns.txt[
+Pattern 'Basar Regression Test: sql_builder_test' found.
+Pattern 'Test 1: SQL String Builder Interface' found.
+Pattern 'SQL string builder interface verified' found.
+Pattern 'Test 2: Prepared Statement Builder' found.
+Pattern 'Prepared statement builder available' found.
+Pattern 'Test 3: Builder Type Indexes' found.
+Pattern 'Builder type indexes defined' found.
+Pattern 'Test 4: Builder List' found.
+Pattern 'SQL string builder list available' found.
+Pattern 'Test 5: Builder Reference' found.
+Pattern 'SQL string builder reference validated' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbaspect.so' found.
+==> 15 out of 15 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 9: libbasardbsql/connection_basic
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/connection_basic/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/connection_basic
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbsql/connection_basic/go.out[ for patterns from ]basar/regression/libbasardbsql/connection_basic/patterns.txt[
+Pattern '' found.
+Pattern 'Basar Regression Test: connection_basic' found.
+Pattern 'DatabaseInfo object created successfully' found.
+Pattern 'libbasardbsql version:' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+Pattern 'libbasardbsql.so' found.
+==> 8 out of 8 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 10: libbasardbsql/database_info_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/database_info_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/database_info_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbsql/database_info_test/go.out[ for patterns from ]basar/regression/libbasardbsql/database_info_test/patterns.txt[
+Pattern '' found.
+Pattern 'Basar Regression Test: database_info_test' found.
+Pattern 'Test 1: Default DatabaseInfo' found.
+Pattern 'Created empty DatabaseInfo object' found.
+Pattern 'Test 2: ODBC Configuration' found.
+Pattern 'ODBC DSN set successfully' found.
+Pattern 'Test 3: Informix Configuration' found.
+Pattern 'Informix configuration set successfully' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+==> 11 out of 11 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 11: libbasardbsql/exception_handling
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/exception_handling/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/libbasardbsql/exception_handling
+Exit code: 0
+
+
+==> Checking ]basar/regression/libbasardbsql/exception_handling/go.out[ for patterns from ]basar/regression/libbasardbsql/exception_handling/patterns.txt[
+Pattern '' found.
+Pattern 'Basar Regression Test: exception_handling' found.
+Pattern 'Test 1: DbException construction' found.
+Pattern 'DbException caught successfully' found.
+Pattern 'Test 2: Exception hierarchy' found.
+Pattern 'Exception caught as base class' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test exit code: 0' found.
+==> 9 out of 9 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 12: standalone/cpp_basics
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/cpp_basics/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/cpp_basics
+Exit code: 0
+
+
+==> Checking ]basar/regression/standalone/cpp_basics/go.out[ for patterns from ]basar/regression/standalone/cpp_basics/patterns.txt[
+Pattern 'Basar Regression Test: cpp_basics' found.
+Pattern 'Test 1: String Operations' found.
+Pattern 'String value: Hello Basar' found.
+Pattern 'String length:' found.
+Pattern 'String operations verified' found.
+Pattern 'Test 2: Vector Operations' found.
+Pattern 'Vector size: 5' found.
+Pattern 'Vector capacity:' found.
+Pattern 'Vector operations verified' found.
+Pattern 'Test 3: Arithmetic Operations' found.
+Pattern 'Sum of elements: 15' found.
+Pattern 'Arithmetic operations verified' found.
+Pattern 'Test 4: Smart Pointer Operations' found.
+Pattern 'Smart pointer value: 42' found.
+Pattern 'Smart pointer not null: true' found.
+Pattern 'Smart pointer operations verified' found.
+Pattern 'Test 5: Exception Handling Basics' found.
+Pattern 'Exception caught: Test exception' found.
+Pattern 'Exception handling verified' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Exit code: 0' found.
+==> 22 out of 22 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 13: standalone/filesystem_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/filesystem_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/filesystem_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/standalone/filesystem_test/go.out[ for patterns from ]basar/regression/standalone/filesystem_test/patterns.txt[
+Pattern 'Basar Regression Test: filesystem_test' found.
+Pattern 'Test 1: File Creation' found.
+Pattern 'File created successfully' found.
+Pattern 'Content written successfully' found.
+Pattern 'Test 2: File Reading' found.
+Pattern 'Lines read: 2' found.
+Pattern 'Test 3: File Append' found.
+Pattern 'Content appended successfully' found.
+Pattern 'Test 4: File Size Check' found.
+Pattern 'File size:' found.
+Pattern 'bytes' found.
+Pattern 'Test 5: File Deletion' found.
+Pattern 'File deleted successfully' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test execution completed with exit code 0' found.
+==> 16 out of 16 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 14: standalone/infrastructure_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/infrastructure_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/standalone/infrastructure_test/go.out[ for patterns from ]basar/regression/standalone/infrastructure_test/patterns.txt[
+Pattern 'Basar Regression Test: infrastructure_test' found.
+Pattern 'Test 1: Build System Validation' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Compilation verified' found.
+Pattern 'Test 2: Standard Library Availability' found.
+Pattern 'iostream available' found.
+Pattern 'cstdlib available' found.
+Pattern 'Standard library verified' found.
+Pattern 'Test 3: Output Stream Functionality' found.
+Pattern 'stdout stream operational' found.
+Pattern 'Output stream verified' found.
+Pattern 'Test 4: Command Line Arguments' found.
+Pattern 'argc value:' found.
+Pattern 'argv accessible: yes' found.
+Pattern 'Command line arguments verified' found.
+Pattern 'Test 5: Exit Code Handling' found.
+Pattern 'Test execution: PASS' found.
+Pattern 'Exit code: 0' found.
+Pattern 'Exit code handling verified' found.
+Pattern 'Test completed successfully' found.
+==> 20 out of 20 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 15: standalone/memory_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/memory_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/memory_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/standalone/memory_test/go.out[ for patterns from ]basar/regression/standalone/memory_test/patterns.txt[
+Pattern 'Basar Regression Test: memory_test' found.
+Pattern 'Test 1: Smart Pointer Usage' found.
+Pattern 'unique_ptr created with value: 42' found.
+Pattern 'shared_ptr created with value: 100' found.
+Pattern 'shared_ptr use count: 1' found.
+Pattern 'Test 2: Vector Memory Management' found.
+Pattern 'Vector reserved capacity: 1000' found.
+Pattern 'Vector size after push: 100' found.
+Pattern 'Test 3: Memory Allocation' found.
+Pattern 'Raw array allocated' found.
+Pattern 'Raw array deallocated' found.
+Pattern 'Test 4: RAII Pattern' found.
+Pattern 'Scoped resource created' found.
+Pattern 'Scoped resource automatically freed' found.
+Pattern 'Test 5: Move Semantics' found.
+Pattern 'Source vector size: 5' found.
+Pattern 'Dest vector size after move: 5' found.
+Pattern 'Source vector size after move: 0' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test execution completed with exit code 0' found.
+==> 21 out of 21 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+Test 16: standalone/threading_test
+=========================================
+Running: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/threading_test/go.sh
+Working directory: /software/home/benabdelaziz/basar_continuous01/pharmos.base.basar/dev/src/basar/regression/standalone/threading_test
+Exit code: 0
+
+
+==> Checking ]basar/regression/standalone/threading_test/go.out[ for patterns from ]basar/regression/standalone/threading_test/patterns.txt[
+Pattern 'Basar Regression Test: threading_test' found.
+Pattern 'Test 1: Thread Creation' found.
+Pattern 'Thread created and executed' found.
+Pattern 'Thread joined successfully' found.
+Pattern 'Test 2: Multiple Threads' found.
+Pattern 'Thread' found.
+Pattern 'completed' found.
+Pattern 'increments' found.
+Pattern 'All threads completed' found.
+Pattern 'Final counter value: 4000' found.
+Pattern 'Test 3: Mutex Synchronization' found.
+Pattern 'Mutex lock acquired and released' found.
+Pattern 'Test 4: Atomic Operations' found.
+Pattern 'Atomic fetch_add result: 10' found.
+Pattern 'Test 5: Thread Safety' found.
+Pattern 'Thread-safe counter verification: passed' found.
+Pattern 'Test completed successfully' found.
+Pattern 'Build successful - binary created' found.
+Pattern 'Test execution completed with exit code 0' found.
+==> 19 out of 19 patterns found. Success rate: 100%
+✓ PASSED
+
+=========================================
+  Regression Test Results
+=========================================
+
+Total tests:  16
+Passed:       16
+Failed:       0
+
+End time: Thu Dec 25 17:57:46 CET 2025
+
+SUCCESS: All regression tests passed! ✓
