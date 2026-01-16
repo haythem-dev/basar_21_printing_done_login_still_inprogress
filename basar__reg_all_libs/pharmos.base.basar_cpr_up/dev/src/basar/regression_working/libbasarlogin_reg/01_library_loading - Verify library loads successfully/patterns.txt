@@ -1,0 +1,11 @@
+﻿Basar Regression: library_loading
+Test 1: Namespace Accessibility
+basar::login namespace: accessible
+Test 2: Library Information
+libbasarlogin loaded successfully
+Test 3: Type System
+Login types available: yes
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarlogin.so

@@ -1,0 +1,8 @@
+﻿# Test Patterns for: 04_authentication_states
+# Description: Test state machine without actual auth
+
+PATTERN_01: Basic functionality test
+PATTERN_02: Edge case testing
+PATTERN_03: Error handling
+PATTERN_04: Performance test
+PATTERN_05: Integration test
