@@ -1,8 +1,15 @@
-﻿# Test Patterns for: 02_login_types
-# Description: Test login type enums and constants
-
-PATTERN_01: Basic functionality test
-PATTERN_02: Edge case testing
-PATTERN_03: Error handling
-PATTERN_04: Performance test
-PATTERN_05: Integration test
+Basar Regression: login_types
+Test 1: Login Type Constants
+Standard login type: defined
+SSO login type: defined
+AD login type: defined
+Test 2: Authentication Result Codes
+Success code: available
+Failure code: available
+Test 3: Permission Levels
+No permissions: 0
+Test completed successfully
+Build successful - binary created
+Test exit code: 0
+libbasarlogin.so
+libbasarlogin.so
